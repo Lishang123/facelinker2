@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/fragment_personal_include" />
+</LinearLayout>

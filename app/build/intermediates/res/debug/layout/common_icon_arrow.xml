@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.xinxin.facelinker.widget.IconfontTextView
+        style="@style/layout_wrap_content"
+        android:text="@string/icon_common_arrow"
+        android:textColor="@color/info_sign"
+        android:textSize="16.0sp" />
+</merge>-->
+<ImageView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:src="@drawable/right_arrow_icon"
+    xmlns:android="http://schemas.android.com/apk/res/android" /><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/layout/common_icon_arrow.xml -->

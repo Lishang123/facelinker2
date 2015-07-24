@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/common_top_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_push_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:paddingTop="8.0dip">
+
+                <TextView
+                    style="@style/biao_info_item_tv"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="推送显示消息内容"
+                    android:textSize="16.0sp" />
+
+                <ToggleButton
+                    android:id="@+id/sbt_pushmessage_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_common_togglebutton"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:paddingTop="8.0dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="接收消息"
+                    android:textColor="@color/light_white"
+                    android:textSize="16.0sp" />
+
+                <ToggleButton
+                    android:id="@+id/sbt_message_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_common_togglebutton"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/itemline" />
+
+            <LinearLayout
+                android:id="@+id/ll_use_pro_tone"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:paddingTop="8.0dip">
+
+                <TextView
+                    style="@style/biao_info_item_tv"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="使用专用提示音"
+                    android:textSize="16.0sp" />
+
+                <ToggleButton
+                    android:id="@+id/sbt_personalized_voice_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_common_togglebutton"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_person_withvoice"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:paddingTop="8.0dip">
+
+                <TextView
+                    style="@style/biao_info_item_tv"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="私聊声音"
+                    android:textSize="16.0sp" />
+
+                <ToggleButton
+                    android:id="@+id/sbt_chatvoice_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_common_togglebutton"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_person_withvibration"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:paddingTop="8.0dip">
+
+                <TextView
+                    style="@style/biao_info_item_tv"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="私聊振动"
+                    android:textSize="16.0sp" />
+
+                <ToggleButton
+                    android:id="@+id/sbt_chatshake_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_common_togglebutton"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:paddingTop="8.0dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="所有群消息提醒"
+                    android:textColor="@color/light_white"
+                    android:textSize="16.0sp" />
+
+                <ToggleButton
+                    android:id="@+id/sbt_groupchatvoice_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_common_togglebutton"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:paddingTop="8.0dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="群聊振动"
+                    android:textColor="@color/light_white"
+                    android:textSize="16.0sp" />
+
+                <ToggleButton
+                    android:id="@+id/sbt_groupchatshake_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_common_togglebutton"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_all_group_remind"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:paddingTop="8.0dip">
+
+                <TextView
+                    style="@style/biao_info_item_tv"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="所有群消息提醒"
+                    android:textSize="16.0sp" />
+
+                <ToggleButton
+                    android:id="@+id/sbt_groupmsgremind_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_common_togglebutton"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_use_peaker"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:paddingTop="8.0dip">
+
+                <TextView
+                    style="@style/biao_info_item_tv"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="使用扬声器播放声音"
+                    android:textSize="16.0sp" />
+
+                <ToggleButton
+                    android:id="@+id/sbt_ignorenotview_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_common_togglebutton"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

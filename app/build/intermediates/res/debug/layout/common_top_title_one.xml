@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/ll_common_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top_bar_normal_bg"
+        android:padding="5.0dip">
+
+        <LinearLayout
+            style="@style/layout_wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:id="@+id/left_title"
+                style="@style/top_title_text_style"
+                android:layout_marginLeft="5.0dip"
+                android:background="@drawable/arrow_left"
+                android:clickable="true"
+                android:gravity="left|center"
+                android:textSize="22.0sp" />
+
+            <ImageView
+                android:id="@id/left_dot"
+                style="@style/layout_wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4.0dip"
+                android:background="@drawable/new_remind"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                style="@style/layout_wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/center_title"
+                    style="@style/top_title_center_text_style"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/light_white"
+                    android:textSize="20.0sp" />
+
+                <ImageView
+                    android:id="@id/center_title_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_arrowdown"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@id/center_dot"
+                style="@style/layout_wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4.0dip"
+                android:background="@drawable/new_remind"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+
+
+            <ImageView
+                android:id="@id/right_dot"
+                style="@style/layout_wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4.0dip"
+                android:background="@drawable/new_remind"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/layout/common_top_title_one.xml -->

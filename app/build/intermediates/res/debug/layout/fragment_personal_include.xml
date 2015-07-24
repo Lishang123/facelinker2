@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_top_bar"
+    android:background="@color/top_bar_normal_bg"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/personal"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+</RelativeLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_top_bar_blue">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_section_item"
+            android:orientation="vertical">
+            <!--个人头像信息区，不含有关注、粉丝等-->
+            <LinearLayout
+                android:id="@+id/ll_personal_head"
+                style="@style/layout_fill"
+                android:background="@drawable/btn_bottom_selector"
+                android:gravity="center_vertical"
+                android:padding="15.0dip">
+
+                <ImageView
+                    android:id="@+id/iv_personal_head"
+                    android:layout_width="60.0dip"
+                    android:layout_height="60.0dip"
+                    android:background="@drawable/user_bg_corner"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/info_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/personal_page"
+                        android:textColor="@color/black_deep"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/info_sign"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:singleLine="true"
+                        android:text="@string/personal_page_sign"
+                        android:textColor="@color/info_sign"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <include layout="@layout/common_icon_arrow" />
+            </LinearLayout>
+            <!--关注、粉丝等-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_concern"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_attention_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="866" />
+
+                    <TextView
+                        android:id="@+id/tv_attention"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_attention_num"
+                        android:text="关注" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rv_fans"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_fans_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="866" />
+
+                    <TextView
+                        android:id="@+id/tv_fans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_fans_num"
+                        android:text="粉丝" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_groups"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_groups_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="866" />
+
+                    <TextView
+                        android:id="@+id/tv_groups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_groups_num"
+                        android:text="群组" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_blacklist"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_blacklist_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1" />
+
+                    <TextView
+                        android:id="@+id/tv_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_blacklist_num"
+                        android:text="黑名单" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/biao_info_item_tip"
+            android:text="@string/system_settings" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_section_item"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_invisible_mode"
+                style="@style/biao_info_item_ll">
+
+                <com.xinxin.facelinker.widget.IconfontTextView
+                    style="@style/biao_info_item_iconfont"
+                    android:background="@drawable/shape_info_sign_icon3"
+                    android:text="@string/icon_invisible"
+                    android:textColor="@android:color/holo_red_dark"/>
+
+                <TextView
+                    style="@style/biao_info_item_tv"
+                    android:text="@string/invisible_mode" />
+
+                <include
+                    layout="@layout/common_icon_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_chatsettings"
+                style="@style/biao_info_item_ll">
+
+                <com.xinxin.facelinker.widget.IconfontTextView
+                    style="@style/biao_info_item_iconfont"
+                    android:background="@drawable/shape_info_sign_icon3"
+                    android:text="@string/icon_chat" />
+
+                <TextView
+                    style="@style/biao_info_item_tv"
+                    android:text="@string/chat_settings" />
+
+                <include
+                    layout="@layout/common_icon_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_accountsettings"
+                style="@style/biao_info_item_ll">
+
+                <com.xinxin.facelinker.widget.IconfontTextView
+                    style="@style/biao_info_item_iconfont"
+                    android:background="@drawable/shape_info_sign_icon3"
+                    android:text="@string/icon_account" />
+
+                <TextView
+                    style="@style/biao_info_item_tv"
+                    android:text="@string/account_settings" />
+
+                <include
+                    layout="@layout/common_icon_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_othersettings"
+                style="@style/biao_info_item_ll">
+
+                <com.xinxin.facelinker.widget.IconfontTextView
+                    style="@style/biao_info_item_iconfont"
+                    android:background="@drawable/shape_info_sign_icon3"
+                    android:text="@string/icon_other" />
+
+                <TextView
+                    style="@style/biao_info_item_tv"
+                    android:text="@string/other_settings" />
+
+                <include
+                    layout="@layout/common_icon_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/biao_info_item_tip"
+            android:text="@string/other" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_section_item"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_rating"
+                style="@style/biao_info_item_ll">
+
+                <com.xinxin.facelinker.widget.IconfontTextView
+                    style="@style/biao_info_item_iconfont"
+                    android:background="@drawable/shape_info_sign_icon4"
+                    android:text="@string/icon_rating" />
+
+                <TextView
+                    style="@style/biao_info_item_tv"
+                    android:text="@string/rating" />
+
+                <include
+                    layout="@layout/common_icon_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_feedback"
+                style="@style/biao_info_item_ll">
+
+                <com.xinxin.facelinker.widget.IconfontTextView
+                    style="@style/biao_info_item_iconfont"
+                    android:background="@drawable/shape_info_sign_icon4"
+                    android:text="@string/icon_feedback" />
+
+                <TextView
+                    style="@style/biao_info_item_tv"
+                    android:text="@string/feedback" />
+
+                <include
+                    layout="@layout/common_icon_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_about"
+                style="@style/biao_info_item_ll"
+                android:layout_gravity="right"
+                >
+
+                <com.xinxin.facelinker.widget.IconfontTextView
+                    style="@style/biao_info_item_iconfont"
+                    android:background="@drawable/shape_info_sign_icon4"
+                    android:text="@string/icon_about" />
+
+                <TextView
+                    style="@style/biao_info_item_tv"
+                    android:text="@string/about" />
+
+                <include
+                    layout="@layout/common_icon_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_personal_exit"
+            style="@style/biao_common_btn_red"
+            android:text="@string/quit_login" />
+    </LinearLayout>
+</ScrollView>
+    </LinearLayout><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/layout/fragment_personal_include.xml -->

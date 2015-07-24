@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/common_top_title_one" />
+
+
+        <EditText
+            android:id="@+id/help_feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_weight="1"
+            android:hint="请输入您的反馈意见(字数500以内)！"
+            android:lines="5"
+            android:text=""></EditText>
+
+
+
+            <Button
+                android:id="@+id/but_help_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_blue_normal_shape"
+                android:text="提交"
+                android:textColor="@color/black_deep"/>
+
+</LinearLayout>
