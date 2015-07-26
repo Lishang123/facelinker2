@@ -65,8 +65,5 @@ public class User extends EMContact {
 		return getUsername().equals(((User) o).getUsername());
 	}
 
-	@Override
-	public String toString() {
-		return nick == null ? username : nick;
-	}
+
 }

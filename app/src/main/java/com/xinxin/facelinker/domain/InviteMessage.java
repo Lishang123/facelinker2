@@ -13,7 +13,7 @@
  */
 package com.xinxin.facelinker.domain;
 
-public class InviteMessage {
+public class InviteMessage extends EntityBase{
 	private String from;
 	//时间
 	private long time;

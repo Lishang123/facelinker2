@@ -1,17 +1,41 @@
 package com.xinxin.facelinker.domain;
 
-public class Version {
+public class Version extends EntityBase{
+	int id;
 	int version;
 	String versionName;
 	String url;
 	String describe;
 
-	public Version(int version, String versionName, String url, String describe) {
-		super();
+	public Version() {
+
+	}
+
+	public Version (int version, String versionName, String url, String describe) {
+
 		this.version = version;
 		this.versionName = versionName;
 		this.url = url;
 		this.describe = describe;
+	}
+
+	@Override
+	public String toString() {
+		return "Version{" +
+				"id=" + id +
+				", version=" + version +
+				", versionName='" + versionName + '\'' +
+				", url='" + url + '\'' +
+				", describe='" + describe + '\'' +
+				'}';
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public int getVersion() {
@@ -45,11 +69,4 @@ public class Version {
 	public void setDescribe(String describe) {
 		this.describe = describe;
 	}
-
-	@Override
-	public String toString() {
-		return "Version [version=" + version + ", versionName=" + versionName
-				+ ", url=" + url + ", describe=" + describe + "]";
-	}
-
 }

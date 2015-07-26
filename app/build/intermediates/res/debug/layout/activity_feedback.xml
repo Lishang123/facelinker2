@@ -2,45 +2,24 @@
     android:id="@+id/ScrollView"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:scrollbars="vertical">
+    android:orientation="vertical">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="#ffffff"
-        android:orientation="vertical">
+    <include
+        android:id="@+id/title"
+        layout="@layout/common_top_title_one" />
 
-
-        <TextView
-            android:id="@+id/help_title"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="#1788D8"
-            android:text="意见反馈"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#ffffff"></TextView>
-
-        <LinearLayout
-            android:layout_width="0px"
-            android:layout_height="0px"
-            android:focusable="true"
-            android:focusableInTouchMode="true" />
 
         <EditText
             android:id="@+id/help_feedback"
             android:layout_width="fill_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:gravity="top"
             android:layout_weight="1"
             android:hint="请输入您的反馈意见(字数500以内)！"
             android:lines="5"
             android:text=""></EditText>
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
+
 
             <Button
                 android:id="@+id/but_help_feedback"
@@ -49,8 +28,5 @@
                 android:background="@drawable/btn_blue_normal_shape"
                 android:text="提交"
                 android:textColor="@color/black_deep"/>
-        </LinearLayout>
 
-
-    </LinearLayout>
 </LinearLayout><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/layout/activity_feedback.xml -->
