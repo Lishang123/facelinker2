@@ -5,4 +5,4 @@
         android:id="@+id/remove"
         android:title="@string/move_out_backlist"/>
 
-</menu><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/menu/remove_from_blacklist.xml -->
+</menu><!-- From: file:/D:/android_project/FaceLinker/app/src/main/res/menu/remove_from_blacklist.xml -->

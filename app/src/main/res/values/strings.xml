@@ -330,4 +330,111 @@
     <string name="check_update_fail">检查网络更新失败</string>
     <string name="title_activity_setting_account">SettingAccountActivity</string>
     <string name="title_activity_setting_others">SettingOthersActivity</string>
+
+    <string name="phone_num_wrong">电话号码填写错误</string>
+    <string name="password_wrong">密码不能为空</string>
+    <string name="password_again_wrong">两次填写的密码不相同</string>
+    <string name="logon_fail">注册失败</string>
+    <string name="logon_success">注册成功</string>
+    <string name="logon_connecting">连接中</string>
+    <string name="logon_connecting_to_server">正在连接,请稍等</string>
+
+    <string name="login_fail">登录失败</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_connecting">登录中</string>
+    <string name="login_connecting_to_server">正在登录，请稍等</string>
+    <string name="account_wrong">账号不能为空</string>
+
+    <string name="information_is_not_enough">信息填写不完整</string>
+    <string name="information_success">信息填写成功</string>
+    <string name="information_fail">信息填写失败</string>
+    <string name="information_connecting">提交中</string>
+    <string name="information_connecting_to_server">正在提交，请稍后</string>
+
+    <string name="title_activity_show_pals">ShowPalsActivity</string>
+    <string name="get_contacts_fail">获取好友列表失败</string>
+    <string name="get_contacts_success">获取好友列表成功</string>
+    <string name="get_contacts_connecting">获取中</string>
+    <string name="get_contacts_connecting_to_server">正在获取好友列表，请稍等</string>
+
+    <string name="get_pal_info_fail">获取好友信息失败</string>
+    <string name="get_pal_info_success">获取好友信息成功</string>
+    <string name="get_pal_info_connecting">获取中</string>
+    <string name="get_pal_info_connecting_to_server">正在获取好友信息，请稍等</string>
+
+    <string name="search_users_fail">搜索失败</string>
+    <string name="search_users_is_empty">该用户不存在</string>
+    <string name="search_users_success">搜索成功</string>
+    <string name="search_users_connecting">搜索中</string>
+    <string name="search_users_connecting_to_server">正在搜索，请稍后</string>
+    <string name="search_can_not_be_empty">搜索用户不能为空</string>
+
+    <string name="add_blacklist_fail">加入黑名单失败</string>
+    <string name="add_blacklist_success">加入黑名单成功</string>
+    <string name="delete_blacklist_fail">删除黑名单失败</string>
+    <string name="delete_blacklist_success">删除黑名单成功</string>
+
+
+    <string name="blacklist_fail">获取黑名单失败</string>
+    <string name="blacklist_success">获取黑名单成功</string>
+    <string name="blacklist_connecting">获取中</string>
+    <string name="blacklist_connecting_to_server">正在获取黑名单，请稍后</string>
+
+    <string name="show_pals_motion_fail">获取朋友圈动态失败</string>
+    <string name="show_pals_motion_success">获取朋友圈动态成功</string>
+    <string name="show_pals_motion_connecting">加载中</string>
+    <string name="show_pals_motion_connecting_to_server">正在获取朋友圈动态，请稍后</string>
+
+    <string name="show_motion_fail">获取动态失败</string>
+    <string name="show_motion_success">获取动态成功</string>
+    <string name="show_motion_connecting">加载中</string>
+    <string name="show_motion_connecting_to_server">正在获取动态，请稍后</string>
+
+    <string name="show_my_motion_fail">获取我的动态失败</string>
+    <string name="show_my_motion_connecting">加载中</string>
+    <string name="show_my_motion_connecting_to_server">正在获取我的动态，请稍后</string>
+
+    <string name="add_my_motion_can_not_be_empty">发表动态不能为空</string>
+    <string name="add_my_motion_fail">发表动态失败</string>
+    <string name="add_my_motion_success">发表动态成功</string>
+    <string name="add_my_motion_connecting">提交中</string>
+    <string name="add_my_motion_connecting_to_server">正在提交动态，请稍后</string>
+
+    <string name="add_comment_fail">发表评论失败</string>
+    <string name="add_comment_success">发表评论失败</string>
+
+    <string name="delete_my_motion_fail">动态删除失败</string>
+    <string name="delete_my_motion_success">动态删除成功</string>
+
+    <string name="show_near_user_motion_fail">获取附近的人的动态失败</string>
+    <string name="show_near_user_motion_success">获取附近的人的动态成功</string>
+    <string name="show_near_user_motion_connecting">获取中</string>
+    <string name="show_near_user_motion_connecting_to_server">正在获取附近的人的动态，请稍后</string>
+
+    <string name="add_new_pal_fail">添加好友失败</string>
+    <string name="add_new_pal_success">添加好友成功</string>
+
+    <string name="receive_new_pals_fail">获取好友申请失败</string>
+    <string name="receive_new_pals_success">获取好友申请成功</string>
+    <string name="receive_new_pals_connecting">获取中</string>
+    <string name="receive_new_pals_connecting_to_server">正在获取好友申请，请稍后</string>
+
+    <string name="receive_new_pal_info_fail">接收好友申请失败</string>
+    <string name="receive_new_pal_info_success">接收好友申请成功</string>
+    <string name="receive_new_pal_info_connecting">接收中</string>
+    <string name="receive_new_pal_info_connecting_to_server">正在接收好友申请，请稍后</string>
+    <string name="title_activity_show_near_user_motion">ShowNearUserMotionActivity</string>
+    <string name="title_activity_show_pals_motion">ShowPalsMotionActivity</string>
+
+    <string name="title_activity_send_new_pal_message">SendNewPalMessageActivity</string>
+    <string name="send_new_pal_message_fail">发送好友申请失败</string>
+    <string name="send_new_pal_message_success">发送好友申请成功</string>
+    <string name="answer_new_pal_success">回复好友申请成功</string>
+    <string name="answer_new_pal_fail">回复好友申请失败</string>
+
+    <string name="verification_code_wrong">验证码填写错误</string>
+
+    <string name="title_activity_forget_password">ForgetPasswordActivity</string>
+    <string name="set_new_password_fail">设置新密码失败</string>
+    <string name="ser_new_password_success">设置新密码成功</string>
 </resources>
