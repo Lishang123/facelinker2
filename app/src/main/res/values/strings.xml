@@ -312,6 +312,15 @@
     <string name="icon_myinfo2">icon_myinfo2</string>
     <string name="invisible_mode">invisible mode</string>
     <string name="title_activity_setting_chat">SettingChatActivity</string>
+    <string name="title_activity_add_info">AddInfoActivity</string>
+    <string name="title_activity_add_my_motion">AddMyMotionActivity</string>
+    <string name="title_activity_get_pal_info">GetPalInfoActivity</string>
+    <string name="title_activity_logon">LogonActivity</string>
+    <string name="title_activity_receive_new_pal_info">ReceiveNewPalInfoActivity</string>
+    <string name="title_activity_receive_new_pals">ReceiveNewPalsActivity</string>
+    <string name="title_activity_search_user">SearchUserActivityActivity</string>
+    <string name="title_activity_show_motion">ShowMotionActivity</string>
+    <string name="title_activity_show_my_motion">ShowMyMotionActivity</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>

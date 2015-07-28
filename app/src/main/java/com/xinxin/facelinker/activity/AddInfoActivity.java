@@ -22,7 +22,10 @@ import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
 import com.xinxin.facelinker.Config;
+import com.xinxin.facelinker.domain.FLUser;
 import com.xinxin.facelinker.domain.User;
+
+import java.util.Date;
 
 public class AddInfoActivity extends Activity {
 
@@ -88,8 +91,12 @@ public class AddInfoActivity extends Activity {
                         try {
                             //创建数据库，保存用户数据
                             DbUtils db= DbUtils.create(AddInfoActivity.this);
-                            User user=new User();
-                            db.saveBindingId(user);
+                            FLUser flUser=new FLUser();
+                            flUser.setEmail(etEmail.getText().toString());
+                            flUser.setGender(etGender.getText().toString());
+                            flUser.setJob(etJob.getText().toString());
+                            flUser.setName(etNickname.getText().toString());
+                            db.saveBindingId(flUser);
                         } catch (DbException e) {
                             e.printStackTrace();
                         }
