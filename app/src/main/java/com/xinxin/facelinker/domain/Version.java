@@ -1,7 +1,6 @@
 package com.xinxin.facelinker.domain;
 
 public class Version extends EntityBase{
-	int id;
 	int version;
 	String versionName;
 	String url;
@@ -22,20 +21,11 @@ public class Version extends EntityBase{
 	@Override
 	public String toString() {
 		return "Version{" +
-				"id=" + id +
-				", version=" + version +
+				"version=" + version +
 				", versionName='" + versionName + '\'' +
 				", url='" + url + '\'' +
 				", describe='" + describe + '\'' +
 				'}';
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public int getVersion() {

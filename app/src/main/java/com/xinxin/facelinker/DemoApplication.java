@@ -13,13 +13,15 @@
  */
 package com.xinxin.facelinker;
 
-import java.util.Map;
-
 import android.app.Application;
 import android.content.Context;
 
 import com.easemob.EMCallBack;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.xinxin.facelinker.domain.User;
+
+import java.util.Map;
 
 public class DemoApplication extends Application {
 
@@ -40,7 +42,14 @@ public class DemoApplication extends Application {
         applicationContext = this;
         instance = this;
 
-        /**
+		//创建默认的ImageLoader配置参数
+		ImageLoaderConfiguration configuration = ImageLoaderConfiguration
+				.createDefault(this);
+
+		//Initialize ImageLoader with configuration.
+		ImageLoader.getInstance().init(configuration);
+
+		/**
          * this function will initialize the HuanXin SDK
          * 
          * @return boolean true if caller can continue to call HuanXin related APIs after calling onInit, otherwise false.
@@ -104,7 +113,7 @@ public class DemoApplication extends Application {
 	/**
 	 * 设置用户名
 	 *
-	 * @param user
+	 * @param
 	 */
 	public void setUserName(String username) {
 	    hxSDKHelper.setHXId(username);

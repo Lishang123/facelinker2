@@ -203,7 +203,7 @@
     </style>
     <style name="biao_info_item_tip" parent="@style/layout_fill_wrap">
         <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">@color/info_sign</item>
+        <item name="android:textColor">@color/light_white</item>
         <item name="android:layout_marginLeft">25.0dip</item>
         <item name="android:layout_marginTop">5dp</item>
         <item name="android:layout_marginBottom">5dp</item>
@@ -219,7 +219,7 @@
     </style>
     <style name="biao_info_item_iconfont" parent="@style/layout_wrap_content">
         <item name="android:textSize">20.0sp</item>
-        <item name="android:textColor">@color/black_deep</item>
+        <item name="android:textColor">@android:color/white</item>
         <item name="android:padding">5.0dip</item>
     </style>
     <style name="top_title_text_style">
@@ -251,4 +251,11 @@
 
     <!-- Backward-compatible version of ?android:attr/buttonBarButtonStyle -->
     <style name="ButtonBarButton" />
+<!--关注、黑名单等的textview-->
+    <style name="textview_small_num" parent="android:Theme.NoTitleBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <!--<item name="android:textColor">@color/corners_common_red</item>-->
+    </style>
+
 </resources>

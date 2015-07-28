@@ -14,44 +14,39 @@ public class FLUser extends EntityBase {
     String server_id;
     String photourl;
     String gender;
-    String birthday;
+    String age;
     String location;
     String honour;
     String lasttime;
     String phone;
     String email;
+    String job;
+    String mood;
 
     @Override
     public String toString() {
         return "FLUser{" +
-                "name='" + name + '\'' +
+                "account='" + account + '\'' +
+                ", name='" + name + '\'' +
                 ", server_id='" + server_id + '\'' +
                 ", photourl='" + photourl + '\'' +
                 ", gender='" + gender + '\'' +
-                ", birthday='" + birthday + '\'' +
+                ", age='" + age + '\'' +
                 ", location='" + location + '\'' +
                 ", honour='" + honour + '\'' +
                 ", lasttime='" + lasttime + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
-                ", account='" + account + '\'' +
+                ", job='" + job + '\'' +
+                ", mood='" + mood + '\'' +
                 '}';
     }
 
-    public FLUser() {
+    public String getAccount() {
+        return account;
     }
 
-    public FLUser(String account,String name, String server_id, String photourl, String gender, String birthday, String location, String honour, String lasttime, String phone, String email) {
-        this.name = name;
-        this.server_id = server_id;
-        this.photourl = photourl;
-        this.gender = gender;
-        this.birthday = birthday;
-        this.location = location;
-        this.honour = honour;
-        this.lasttime = lasttime;
-        this.phone = phone;
-        this.email = email;
+    public void setAccount(String account) {
         this.account = account;
     }
 
@@ -87,12 +82,12 @@ public class FLUser extends EntityBase {
         this.gender = gender;
     }
 
-    public String getBirthday() {
-        return birthday;
+    public String getAge() {
+        return age;
     }
 
-    public void setBirthday(String birthday) {
-        this.birthday = birthday;
+    public void setAge(String age) {
+        this.age = age;
     }
 
     public String getLocation() {
@@ -135,11 +130,40 @@ public class FLUser extends EntityBase {
         this.email = email;
     }
 
-    public String getAccount() {
-        return account;
+    public String getJob() {
+        return job;
     }
 
-    public void setAccount(String account) {
-        this.account = account;
+    public void setJob(String job) {
+        this.job = job;
     }
+
+    public String getMood() {
+        return mood;
+    }
+
+    public void setMood(String mood) {
+        this.mood = mood;
+    }
+
+    public FLUser(String account, String name, String server_id, String photourl, String gender, String age, String location, String honour, String lasttime, String phone, String email, String job, String mood) {
+        this.account = account;
+        this.name = name;
+        this.server_id = server_id;
+        this.photourl = photourl;
+        this.gender = gender;
+        this.age = age;
+        this.location = location;
+        this.honour = honour;
+        this.lasttime = lasttime;
+        this.phone = phone;
+        this.email = email;
+        this.job = job;
+        this.mood = mood;
+    }
+
+    public FLUser() {
+    }
+
+
 }

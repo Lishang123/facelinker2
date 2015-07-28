@@ -22,6 +22,15 @@ public class NetHelper {
         utils.send(HttpRequest.HttpMethod.POST, Config.CATEGORIES_URL, params,
                 requestCallBack);
     }
+
+    /**将对象装换为json字符串，用于网络传输
+     * @param object
+     * @return
+     */
+    public static String ObjectToJson(Object object){
+        Gson gson = new Gson();
+        return gson.toJson(object);
+    }
     /**
      * 解析网络数据
      *

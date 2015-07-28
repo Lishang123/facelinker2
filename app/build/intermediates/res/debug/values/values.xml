@@ -434,7 +434,9 @@
     <string name="the_current_network">The current network is not available, please check the network Settings</string>
     <string name="title_activity_about_face_linker">AboutFaceLinkerActivity</string>
     <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_setting_account">SettingAccountActivity</string>
     <string name="title_activity_setting_chat">SettingChatActivity</string>
+    <string name="title_activity_setting_others">SettingOthersActivity</string>
     <string name="unable_to_connect">Unable to connect to the server</string>
     <string name="unable_to_get_loaction">Unable to get to your location information!</string>
     <string name="user_card">Business card</string>
@@ -568,7 +570,7 @@
     </style>
     <style name="biao_info_item_iconfont" parent="@style/layout_wrap_content">
         <item name="android:textSize">20.0sp</item>
-        <item name="android:textColor">@color/black_deep</item>
+        <item name="android:textColor">@android:color/white</item>
         <item name="android:padding">5.0dip</item>
     </style>
     <style name="biao_info_item_iv" parent="@style/layout_wrap_content">
@@ -583,7 +585,7 @@
     </style>
     <style name="biao_info_item_tip" parent="@style/layout_fill_wrap">
         <item name="android:textSize">16.0sp</item>
-        <item name="android:textColor">@color/info_sign</item>
+        <item name="android:textColor">@color/light_white</item>
         <item name="android:layout_marginLeft">25.0dip</item>
         <item name="android:layout_marginTop">5dp</item>
         <item name="android:layout_marginBottom">5dp</item>
@@ -651,6 +653,11 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
     <style name="nornal_style" parent="android:Theme.NoTitleBar"/>
+    <style name="textview_small_num" parent="android:Theme.NoTitleBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <!--<item name="android:textColor">@color/corners_common_red</item>-->
+    </style>
     <style name="top_title_center_text_style">
         <item name="android:textSize">20.0sp</item>
         <item name="android:layout_width">wrap_content</item>

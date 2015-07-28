@@ -297,6 +297,16 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_about_face_linker"
             android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.xinxin.facelinker.activity.SettingAccountActivity"
+            android:label="@string/title_activity_setting_account"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.xinxin.facelinker.activity.SettingOthersActivity"
+            android:label="@string/title_activity_setting_others"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
     </application>
 
 </manifest>

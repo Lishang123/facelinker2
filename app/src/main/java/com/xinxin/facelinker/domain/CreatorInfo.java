@@ -1,6 +1,6 @@
 package com.xinxin.facelinker.domain;
 
-public class CreatorInfo {
+public class CreatorInfo extends EntityBase{
 
 	public CreatorInfo(String name, String address, String qq) {
 		super();

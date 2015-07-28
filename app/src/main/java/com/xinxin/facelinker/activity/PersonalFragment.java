@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.easemob.EMCallBack;
 import com.easemob.chat.EMChatManager;
@@ -36,14 +37,19 @@ public class PersonalFragment extends Fragment implements OnClickListener {
      * 个人信息界面
      */
     private LinearLayout ll_personal_head;
+
     /**
-     * 关注
+     * 好友数量
      */
-    private RelativeLayout rl_concern;
+    private TextView tv_pals_num;
     /**
-     * 粉丝
+     * 群组数量
      */
-    private RelativeLayout rv_fans;
+    private TextView tv_groups_num;
+    /**
+     * 黑名单数量
+     */
+    private TextView tv_blacklist_num;
     /**
      * 群组
      */
@@ -52,10 +58,6 @@ public class PersonalFragment extends Fragment implements OnClickListener {
      * 黑名单
      */
     private RelativeLayout rl_blacklist;
-    /**
-     * 隐身模式
-     */
-    private LinearLayout ll_invisible_mode;
 
     /**
      * 聊天设置
@@ -98,10 +100,20 @@ public class PersonalFragment extends Fragment implements OnClickListener {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
         if (savedInstanceState != null && savedInstanceState.getBoolean("isConflict", false))
             return;
         init();
+        iv_personal_head.setOnClickListener(this);
+        ll_personal_head.setOnClickListener(this);
+        rl_groups.setOnClickListener(this);
+        rl_blacklist.setOnClickListener(this);
+        ll_chatsettings.setOnClickListener(this);
+        ll_accountsettings.setOnClickListener(this);
+        ll_othersettings.setOnClickListener(this);
+        ll_rating.setOnClickListener(this);
+        ll_feedback.setOnClickListener(this);
+        ll_about.setOnClickListener(this);
+        bt_personal_exit.setOnClickListener(this);
         if (!TextUtils.isEmpty(EMChatManager.getInstance().getCurrentUser())) {
             bt_personal_exit.setText(getString(R.string.button_logout) + "(" + EMChatManager.getInstance().getCurrentUser() + ")");
         }
@@ -112,66 +124,47 @@ public class PersonalFragment extends Fragment implements OnClickListener {
     private void init() {
         iv_personal_head = (ImageView) getView().findViewById(R.id.iv_personal_head);
         ll_personal_head = (LinearLayout) getView().findViewById(R.id.ll_personal_head);
-        rl_concern = (RelativeLayout) getView().findViewById(R.id.rl_concern);
-        rv_fans = (RelativeLayout) getView().findViewById(R.id.rv_fans);
         rl_groups = (RelativeLayout) getView().findViewById(R.id.rl_groups);
         rl_blacklist = (RelativeLayout) getView().findViewById(R.id.rl_blacklist);
-        ll_invisible_mode = (LinearLayout) getView().findViewById(R.id.ll_invisible_mode);
         ll_chatsettings = (LinearLayout) getView().findViewById(R.id.ll_chatsettings);
-
         ll_accountsettings = (LinearLayout) getView().findViewById(R.id.ll_accountsettings);
         ll_othersettings = (LinearLayout) getView().findViewById(R.id.ll_othersettings);
         ll_rating = (LinearLayout) getView().findViewById(R.id.ll_rating);
         ll_feedback = (LinearLayout) getView().findViewById(R.id.ll_feedback);
         ll_about = (LinearLayout) getView().findViewById(R.id.ll_about);
-
-
-        iv_personal_head.setOnClickListener(this);
-        ll_personal_head.setOnClickListener(this);
-        rl_concern.setOnClickListener(this);
-        rv_fans.setOnClickListener(this);
-        rl_groups.setOnClickListener(this);
-        rl_blacklist.setOnClickListener(this);
-        ll_invisible_mode.setOnClickListener(this);
-        ll_chatsettings.setOnClickListener(this);
-        ll_accountsettings.setOnClickListener(this);
-        ll_othersettings.setOnClickListener(this);
-        ll_rating.setOnClickListener(this);
-        ll_feedback.setOnClickListener(this);
-        ll_about.setOnClickListener(this);
-
-
+        tv_pals_num = (TextView) getView().findViewById(R.id.tv_pals_num);
+        tv_groups_num = (TextView) getView().findViewById(R.id.tv_groups_num);
+        tv_blacklist_num = (TextView) getView().findViewById(R.id.tv_blacklist_num);
 //        初始化登陆按钮并设置其显示名字
         bt_personal_exit = (Button) getView().findViewById(R.id.bt_personal_exit);
-        bt_personal_exit.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.iv_personal_head:
-
+                changeAvater();
                 break;
             case R.id.ll_personal_head:
+                ChangePersonInfo();
                 break;
-            case R.id.rl_concern:
-                startActivity(new Intent(getActivity(), SettingChatActivity.class));
-                break;
-            case R.id.rv_fans:
+            case R.id.rv_pals:
+                //                startActivity(new Intent(getActivity(),));
                 break;
             case R.id.rl_groups:
+                //                startActivity(new Intent(getActivity(),));
                 break;
             case R.id.rl_blacklist:
 //                startActivity(new Intent(getActivity(),));
-                break;
-            case R.id.ll_invisible_mode:
                 break;
             case R.id.ll_chatsettings:
                 startActivity(new Intent(getActivity(), SettingChatActivity.class));
                 break;
             case R.id.ll_accountsettings:
+                startActivity(new Intent(getActivity(), SettingAccountActivity.class));
                 break;
             case R.id.ll_othersettings:
+                startActivity(new Intent(getActivity(), SettingOthersActivity.class));
                 break;
             case R.id.ll_rating:
                 rating(getActivity().getApplicationContext());
@@ -187,6 +180,14 @@ public class PersonalFragment extends Fragment implements OnClickListener {
                 break;
 
         }
+    }
+
+    private void ChangePersonInfo() {
+
+    }
+
+    private void changeAvater() {
+
     }
 
     @Override

@@ -328,4 +328,6 @@
     <string name="find_new_version">有新版本等您去体验</string>
     <string name="personal">Personal</string>
     <string name="check_update_fail">检查网络更新失败</string>
+    <string name="title_activity_setting_account">SettingAccountActivity</string>
+    <string name="title_activity_setting_others">SettingOthersActivity</string>
 </resources>
