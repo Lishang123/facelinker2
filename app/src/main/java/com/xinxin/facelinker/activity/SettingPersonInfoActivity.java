@@ -259,8 +259,6 @@ public class SettingPersonInfoActivity extends Activity implements OnClickListen
         rl_user_xingbie = (RelativeLayout) findViewById(R.id.rl_user_xingbie);
         rl_user_nianling = (RelativeLayout) findViewById(R.id.rl_user_nianling);
         rl_user_chengshi = (RelativeLayout) findViewById(R.id.rl_user_chengshi);
-        rl_user_zainadongtai = (RelativeLayout) findViewById(R.id.rl_user_zainadongtai);
-        rl_user_job = (RelativeLayout) findViewById(R.id.rl_user_zhiye);
         rl_user_qianming = (RelativeLayout) findViewById(R.id.rl_user_qianming);
 
         //实例化用户信息组件
@@ -270,7 +268,7 @@ public class SettingPersonInfoActivity extends Activity implements OnClickListen
         tv_user_xingbie = (TextView) findViewById(R.id.tv_user_xingbie);
         tv_user_nianling = (TextView) findViewById(R.id.tv_user_nianling);
         tv_user_chengshi = (TextView) findViewById(R.id.tv_user_chengshi);
-        tv_user_job = (TextView) findViewById(R.id.tv_user_zhiye);
+        tv_user_job = (TextView) findViewById(R.id.tv_user_job);
         tv_user_qianming = (TextView) findViewById(R.id.tv_user_qianming);
     }
 
@@ -297,17 +295,15 @@ public class SettingPersonInfoActivity extends Activity implements OnClickListen
             case R.id.rl_user_chengshi:
                 //修改城市
                 break;
-            case R.id.rl_user_zhiye:
+            case R.id.rl_user_job:
                 //修改职业
                 change_job();
                 break;
             case R.id.rl_user_qianming:
-                //修改签名
+                //修改心情
                 change_qianming("" + tv_user_qianming.getText().toString().trim());
                 break;
-            case R.id.rl_user_zainadongtai:
-                //修改在哪动态
-                break;
+
         }
 
     }
@@ -403,7 +399,7 @@ public class SettingPersonInfoActivity extends Activity implements OnClickListen
                 .setView(texta)
                 .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        String mood = texta.getEditableText().toString();
+                        final String mood = texta.getEditableText().toString();
                         user.setMood(mood);
                         RequestParams params = new RequestParams();
                         params.addBodyParameter(Config.ACTION_CHANGE_FLUSER_INFO, NetHelper.ObjectToJson(user));
@@ -456,7 +452,7 @@ public class SettingPersonInfoActivity extends Activity implements OnClickListen
                 .setView(texta)
                 .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        String age = texta.getEditableText().toString();
+                        final String age = texta.getEditableText().toString();
                         user.setAge(age);
                         RequestParams params = new RequestParams();
 
@@ -500,15 +496,15 @@ public class SettingPersonInfoActivity extends Activity implements OnClickListen
                 .setView(texta)
                 .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        String nickname = texta.getEditableText().toString();
-                        user.setName(nickname);
+                        final String name = texta.getEditableText().toString();
+                        user.setName(name);
                         RequestParams params = new RequestParams();
                         params.addBodyParameter(Config.ACTION_CHANGE_FLUSER_INFO, NetHelper.ObjectToJson(user));
                         new HttpUtils().send(HttpRequest.HttpMethod.POST, Config.CATEGORIES_URL, new RequestCallBack<String>() {
                             @Override
                             public void onSuccess(ResponseInfo<String> responseInfo) {
                                 Log.d(LOG, "更改昵称成功");
-                                tv_user_nicheng.setText(nickname);
+                                tv_user_nicheng.setText(name);
                                 try {
 //                            将信息保存到本地
                                     utils.update(user, WhereBuilder.b("account", "=", user.getAccount()));
