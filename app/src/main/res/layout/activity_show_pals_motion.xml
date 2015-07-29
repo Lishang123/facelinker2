@@ -1,5 +1,5 @@
 <fragment xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment"
-    android:name="com.xinxin.facelinker.activity.ShowPalsMotionActivityFragment"
+    android:name="com.xinxin.facelinker.activity.ShowPalsMotionFragment"
     tools:layout="@layout/fragment_show_pals_motion" android:layout_width="match_parent"
     android:layout_height="match_parent" />

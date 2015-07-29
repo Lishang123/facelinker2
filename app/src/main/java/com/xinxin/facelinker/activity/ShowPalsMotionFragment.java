@@ -1,9 +1,10 @@
 package com.xinxin.facelinker.activity;
 
-import android.app.Fragment;
+
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,7 +34,7 @@ import java.util.List;
 /**
  * A placeholder fragment containing a simple view.
  */
-public class ShowPalsMotionActivityFragment extends Fragment {
+public class ShowPalsMotionFragment extends Fragment {
 
     private String my_account_num;
     private ListView lvShowPalsMotion;
@@ -44,7 +45,7 @@ public class ShowPalsMotionActivityFragment extends Fragment {
     private List<ShowPalsMotion> list = new ArrayList<ShowPalsMotion>();
     private String comment;
 
-    public ShowPalsMotionActivityFragment() {
+    public ShowPalsMotionFragment() {
     }
 
     @Override

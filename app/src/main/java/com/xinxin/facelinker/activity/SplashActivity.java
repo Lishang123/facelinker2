@@ -14,6 +14,7 @@ import android.os.Handler;
 import android.view.animation.AlphaAnimation;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.easemob.chat.EMChatManager;
 import com.easemob.chat.EMGroupManager;
@@ -114,6 +115,8 @@ public class SplashActivity extends BaseActivity {
                 @Override
                 public void onFailure(HttpException e, String s) {
                     System.out.println("网络连接失败");
+                    Toast.makeText(getApplicationContext(),"连接网络服务器失败",Toast.LENGTH_SHORT).show();
+                    enterMain();
                     status = false;
                 }
             });

@@ -45,7 +45,7 @@
 
 
             <LinearLayout
-                android:id="@+id/ll_chang_password"
+                android:id="@+id/ll_change_password"
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:gravity="center_vertical"

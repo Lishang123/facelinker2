@@ -83,8 +83,10 @@ public class MainActivity extends BaseActivity implements EMEventListener {
     private ContactlistFragment contactListFragment;
     // private ChatHistoryFragment chatHistoryFragment;
     private ChatAllHistoryFragment chatHistoryFragment;
+    private ShowPalsMotionFragment showPalsMotionFragment;
+
     private PersonalFragment personalFragment;
-    private SettingsFragment settingFragment;
+
     private Fragment[] fragments;
     private int index;
     // 当前fragment的index
@@ -143,8 +145,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         chatHistoryFragment = new ChatAllHistoryFragment();
         contactListFragment = new ContactlistFragment();
         personalFragment = new PersonalFragment();
-        settingFragment = new SettingsFragment();
-        fragments = new Fragment[]{chatHistoryFragment, contactListFragment, personalFragment,settingFragment};
+        fragments = new Fragment[]{chatHistoryFragment, contactListFragment, showPalsMotionFragment, personalFragment};
         // 添加显示第一个fragment
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, chatHistoryFragment)
                 .add(R.id.fragment_container, contactListFragment).hide(contactListFragment).show(chatHistoryFragment)
@@ -540,7 +541,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
                     String st10 = getResources().getString(R.string.have_you_removed);
                     if (ChatActivity.activityInstance != null
                             && usernameList.contains(ChatActivity.activityInstance.getToChatUsername())) {
-                        Toast.makeText(MainActivity.this, ChatActivity.activityInstance.getToChatUsername() + st10, 1)
+                        Toast.makeText(MainActivity.this, ChatActivity.activityInstance.getToChatUsername() + st10, Toast.LENGTH_LONG)
                                 .show();
                         ChatActivity.activityInstance.finish();
                     }

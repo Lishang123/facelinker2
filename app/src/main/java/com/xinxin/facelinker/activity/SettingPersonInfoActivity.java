@@ -176,7 +176,7 @@ public class SettingPersonInfoActivity extends Activity implements OnClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_person_info_settings);
+        setContentView(R.layout.activity_person_info_settings);
         DeviceUuidFactory uuid = new DeviceUuidFactory(this);
         pd = new ProgressDialog(this);
         pd.setMessage("正在提交请求...");

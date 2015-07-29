@@ -183,11 +183,11 @@ public class PersonalFragment extends Fragment implements OnClickListener {
     }
 
     private void ChangePersonInfo() {
-
+        startActivity(new Intent(getActivity(), SettingPersonInfoActivity.class));
     }
 
     private void changeAvater() {
-
+        startActivity(new Intent(getActivity(), SettingPersonInfoActivity.class));
     }
 
     @Override

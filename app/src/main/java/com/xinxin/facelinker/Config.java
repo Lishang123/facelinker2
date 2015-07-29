@@ -99,4 +99,7 @@ public class Config {
         e.putString(KEY_MY_ACCOUNT_NUM, account_num);
         e.commit();
     }
+
+    public static final String ACTION_CHANGE_FLUSER_PASSWORD = "change_fluser_password";
+
 }
