@@ -3,4 +3,4 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <solid android:color="@color/info_sign_icon4" />
     <corners android:radius="4.0dip" />
-</shape><!-- From: file:/D:/android_project/FaceLinker/app/src/main/res/drawable/shape_info_sign_icon4.xml -->
+</shape><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/drawable/shape_info_sign_icon4.xml -->

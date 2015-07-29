@@ -2,38 +2,31 @@ package com.xinxin.facelinker.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import com.easemob.chatuidemo.R;
 
 public class SettingOthersActivity extends Activity {
+    View left_title;
+    LinearLayout ll_clear_recent_chat_list;
+    LinearLayout ll_clear_chat_log;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting_others);
+        left_title=findViewById(R.id.left_title);
+        ll_clear_recent_chat_list= (LinearLayout) findViewById(R.id.ll_clear_recent_chat_list);
+        ll_clear_chat_log= (LinearLayout) findViewById(R.id.ll_clear_chat_log);
+        left_title.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+
+            }
+        });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_setting_others, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }

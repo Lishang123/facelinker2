@@ -338,6 +338,7 @@
             android:name="com.xinxin.facelinker.activity.ShowMotionActivity"
             android:label="@string/title_activity_show_motion" >
         </activity>
+        <activity android:name="com.xinxin.facelinker.activity.ShowBlacklistActivity"/>
         <activity
             android:name="com.xinxin.facelinker.activity.ShowMyMotionActivity"
             android:label="@string/title_activity_show_my_motion" >

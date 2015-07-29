@@ -16,12 +16,25 @@
             android:layout_centerHorizontal="true"
             android:layout_centerInParent="true"
             android:src="@drawable/welcom_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="忘记密码"
+            android:id="@+id/tvForgetPassword"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="29dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="32dp" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dip"
-        android:layout_weight="1" >
+        android:layout_weight="1">
 
         <RelativeLayout
             android:id="@+id/rl_username"
@@ -41,7 +54,7 @@
                 android:src="@drawable/icon_account" />
 
             <EditText
-                android:id="@+id/username"
+                android:id="@+id/etLoginNum"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
@@ -50,8 +63,7 @@
                 android:paddingLeft="10dip"
                 android:singleLine="true"
                 android:textColor="#000"
-                android:textSize="18sp"
-                android:text="111"/>
+                android:textSize="18sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -74,7 +86,7 @@
                 android:src="@drawable/icon_pwd" />
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerVertical="true"
@@ -93,7 +105,8 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="30dp"
-            android:orientation="horizontal" >
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout15">
 
             <Button
                 android:layout_width="0dp"
@@ -108,10 +121,11 @@
                 android:paddingTop="7dp"
                 android:text="@string/register"
                 android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:id="@+id/btnLogon" />
 
             <Button
-                android:id="@+id/btn_login"
+                android:id="@+id/btnLogin"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dip"
@@ -126,6 +140,7 @@
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
         </LinearLayout>
+
     </RelativeLayout>
 
-</LinearLayout><!-- From: file:/D:/android_project/FaceLinker/app/src/main/res/layout/activity_login.xml -->
+</LinearLayout><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/layout/activity_login.xml -->

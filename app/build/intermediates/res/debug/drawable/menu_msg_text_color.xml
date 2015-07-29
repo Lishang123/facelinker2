@@ -5,4 +5,4 @@
     <item android:color="#99cc00" android:state_selected="true"/>
     <item android:color="@color/top_bar_normal_bg" />
 </selector>
-<!-- From: file:/D:/android_project/FaceLinker/app/src/main/res/drawable/menu_msg_text_color.xml -->
+<!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/drawable/menu_msg_text_color.xml -->

@@ -5,4 +5,4 @@
     <item android:state_pressed="true" android:drawable="@drawable/chatto_bg_focused" />
     <item android:state_selected="true" android:drawable="@drawable/chatto_bg_focused" />
     <item android:drawable="@drawable/chatto_bg_normal" />
-</selector><!-- From: file:/D:/android_project/FaceLinker/app/src/main/res/drawable/chatto_bg.xml -->
+</selector><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/drawable/chatto_bg.xml -->

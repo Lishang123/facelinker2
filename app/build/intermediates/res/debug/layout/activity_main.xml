@@ -142,4 +142,4 @@
         android:layout_height="match_parent"
         android:layout_above="@id/main_bottom" />
 
-</RelativeLayout><!-- From: file:/D:/android_project/FaceLinker/app/src/main/res/layout/activity_main.xml -->
+</RelativeLayout><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/layout/activity_main.xml -->

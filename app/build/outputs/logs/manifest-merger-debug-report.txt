@@ -566,3 +566,91 @@ ADDED from AndroidManifest.xml:304:9
 		ADDED from AndroidManifest.xml:307:13
 	android:name
 		ADDED from AndroidManifest.xml:305:13
+activity#com.xinxin.facelinker.activity.AddInfoActivity
+ADDED from AndroidManifest.xml:309:9
+	android:label
+		ADDED from AndroidManifest.xml:311:13
+	android:name
+		ADDED from AndroidManifest.xml:310:13
+activity#com.xinxin.facelinker.activity.AddMyMotionActivity
+ADDED from AndroidManifest.xml:313:9
+	android:label
+		ADDED from AndroidManifest.xml:315:13
+	android:name
+		ADDED from AndroidManifest.xml:314:13
+activity#com.xinxin.facelinker.activity.GetPalInfoActivity
+ADDED from AndroidManifest.xml:317:9
+	android:label
+		ADDED from AndroidManifest.xml:319:13
+	android:name
+		ADDED from AndroidManifest.xml:318:13
+activity#com.xinxin.facelinker.activity.LogonActivity
+ADDED from AndroidManifest.xml:321:9
+	android:label
+		ADDED from AndroidManifest.xml:323:13
+	android:name
+		ADDED from AndroidManifest.xml:322:13
+activity#com.xinxin.facelinker.activity.ReceiveNewPalInfoActivity
+ADDED from AndroidManifest.xml:325:9
+	android:label
+		ADDED from AndroidManifest.xml:327:13
+	android:name
+		ADDED from AndroidManifest.xml:326:13
+activity#com.xinxin.facelinker.activity.ReceiveNewPalsActivity
+ADDED from AndroidManifest.xml:329:9
+	android:label
+		ADDED from AndroidManifest.xml:331:13
+	android:name
+		ADDED from AndroidManifest.xml:330:13
+activity#com.xinxin.facelinker.activity.SearchUserActivity
+ADDED from AndroidManifest.xml:333:9
+	android:label
+		ADDED from AndroidManifest.xml:335:13
+	android:name
+		ADDED from AndroidManifest.xml:334:13
+activity#com.xinxin.facelinker.activity.ShowMotionActivity
+ADDED from AndroidManifest.xml:337:9
+	android:label
+		ADDED from AndroidManifest.xml:339:13
+	android:name
+		ADDED from AndroidManifest.xml:338:13
+activity#com.xinxin.facelinker.activity.ShowBlacklistActivity
+ADDED from AndroidManifest.xml:341:9
+	android:name
+		ADDED from AndroidManifest.xml:341:19
+activity#com.xinxin.facelinker.activity.ShowMyMotionActivity
+ADDED from AndroidManifest.xml:342:9
+	android:label
+		ADDED from AndroidManifest.xml:344:13
+	android:name
+		ADDED from AndroidManifest.xml:343:13
+activity#com.xinxin.facelinker.activity.ShowNearUserMotionActivity
+ADDED from AndroidManifest.xml:346:9
+	android:label
+		ADDED from AndroidManifest.xml:348:13
+	android:name
+		ADDED from AndroidManifest.xml:347:13
+activity#com.xinxin.facelinker.activity.ShowPalsActivity
+ADDED from AndroidManifest.xml:350:9
+	android:label
+		ADDED from AndroidManifest.xml:352:13
+	android:name
+		ADDED from AndroidManifest.xml:351:13
+activity#com.xinxin.facelinker.activity.ShowPalsMotionActivity
+ADDED from AndroidManifest.xml:354:9
+	android:label
+		ADDED from AndroidManifest.xml:356:13
+	android:name
+		ADDED from AndroidManifest.xml:355:13
+activity#com.xinxin.facelinker.activity.SendNewPalMessageActivity
+ADDED from AndroidManifest.xml:358:9
+	android:label
+		ADDED from AndroidManifest.xml:360:13
+	android:name
+		ADDED from AndroidManifest.xml:359:13
+activity#com.xinxin.facelinker.activity.ForgetPasswordActivity
+ADDED from AndroidManifest.xml:362:9
+	android:label
+		ADDED from AndroidManifest.xml:364:13
+	android:name
+		ADDED from AndroidManifest.xml:363:13
