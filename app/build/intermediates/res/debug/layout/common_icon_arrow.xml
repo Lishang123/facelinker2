@@ -12,4 +12,4 @@
     android:layout_height="wrap_content"
     android:layout_width="wrap_content"
     android:src="@drawable/right_arrow_icon"
-    xmlns:android="http://schemas.android.com/apk/res/android" /><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/layout/common_icon_arrow.xml -->
+    xmlns:android="http://schemas.android.com/apk/res/android" /><!-- From: file:/D:/android_project/FaceLinker/app/src/main/res/layout/common_icon_arrow.xml -->

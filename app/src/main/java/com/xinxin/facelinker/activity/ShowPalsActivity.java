@@ -50,6 +50,8 @@ public class ShowPalsActivity extends Activity {
         lvShowPals.setAdapter(adapter);
         my_account_num = Config.getCachedAccountNum(ShowPalsActivity.this);
 
+        //测试
+
         final ProgressDialog pd = ProgressDialog.show(ShowPalsActivity.this, getResources().getString(R.string.get_contacts_connecting), getResources().getString(R.string.get_contacts_connecting_to_server));
 //        new ShowPalsNet(my_account_num, new ShowPalsNet.SuccessCallback() {
         RequestParams params = new RequestParams();
@@ -59,13 +61,15 @@ public class ShowPalsActivity extends Activity {
                     @Override
                     public void onSuccess(ResponseInfo<String> responseInfo) {
                         pd.dismiss();
-                        Gson gson = new Gson();
-                        list = gson.fromJson(responseInfo.result, new TypeToken<List<ShowPals>>() {
-                        }.getType());
-                        for (int i = 0; i < list.size(); i++) {
-                            adapter.add(list.get(i).getNickname());
-                            adapter.notifyDataSetChanged();
-                        }
+
+//                        Gson gson = new Gson();
+//                        list = gson.fromJson(responseInfo.result, new TypeToken<List<ShowPals>>() {
+//                        }.getType());
+//                        System.out.println(list.toArray().length);
+//                        for (int i = 0; i < list.size(); i++) {
+//                            adapter.add(list.get(i).getNickname());
+//                            adapter.notifyDataSetChanged();
+//                        }
 
                         lvShowPals.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                             @Override

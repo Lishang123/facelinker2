@@ -51,16 +51,17 @@ public class ShowBlacklistActivity extends Activity {
         httpUtils.send(HttpRequest.HttpMethod.POST, Config.CATEGORIES_URL, params, new RequestCallBack<String>() {
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
-                final ShowBlacklist showBlacklist = (ShowBlacklist) NetHelper.parseJsonData(responseInfo.result, ShowBlacklist.class);
-                for (int i = 0; i < showBlacklist.getOther_account_num().length; i++) {
-                    adapter.add(showBlacklist.getOther_account_num()[i]);
-                }
+                pd.dismiss();
+//                final ShowBlacklist showBlacklist = (ShowBlacklist) NetHelper.parseJsonData(responseInfo.result, ShowBlacklist.class);
+//                for (int i = 0; i < showBlacklist.getOther_account_num().length; i++) {
+//                    adapter.add(showBlacklist.getOther_account_num()[i]);
+//                }
 
                 lvBlacklist.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 
                     @Override
                     public boolean onItemLongClick(AdapterView<?> parent, final View view, final int position, long id) {
-                        other_account_num = showBlacklist.getOther_account_num()[position];
+//                        other_account_num = showBlacklist.getOther_account_num()[position];
 
                         RequestParams params = new RequestParams();
                         params.addBodyParameter(Config.ACTION, Config.ACTION_DELETE_BLACKLIST);

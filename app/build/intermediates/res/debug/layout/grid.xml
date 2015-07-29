@@ -36,4 +36,4 @@
         android:src="@drawable/appitem_del_btn"
         android:visibility="invisible" />
 
-</RelativeLayout><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/layout/grid.xml -->
+</RelativeLayout><!-- From: file:/D:/android_project/FaceLinker/app/src/main/res/layout/grid.xml -->

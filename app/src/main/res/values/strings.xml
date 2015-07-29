@@ -446,4 +446,8 @@
     <string name="title_activity_forget_password">ForgetPasswordActivity</string>
     <string name="set_new_password_fail">设置新密码失败</string>
     <string name="ser_new_password_success">设置新密码成功</string>
+
+    <string name="camera">摄像头</string>
+    <string name="gallery">图库</string>
+    <string name="select_uploda_picture_method">上传头像方式</string>
 </resources>

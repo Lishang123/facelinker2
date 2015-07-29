@@ -359,4 +359,4 @@
                 android:text="@string/quit_login" />
         </LinearLayout>
     </ScrollView>
-</LinearLayout><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/layout/fragment_main_personal.xml -->
+</LinearLayout><!-- From: file:/D:/android_project/FaceLinker/app/src/main/res/layout/fragment_main_personal.xml -->

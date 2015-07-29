@@ -89,8 +89,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="gson-2.3.1" level="project" />
     <orderEntry type="library" exported="" name="xUtils-2.6.14" level="project" />
-    <orderEntry type="library" exported="" name="umeng-analytics-v5.2.4" level="project" />
     <orderEntry type="library" exported="" name="locSDK_3.3" level="project" />
+    <orderEntry type="library" exported="" name="umeng-analytics-v5.2.4" level="project" />
     <orderEntry type="library" exported="" name="easemobchat_2.2.1" level="project" />
     <orderEntry type="library" exported="" name="picasso-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-22.1.1" level="project" />

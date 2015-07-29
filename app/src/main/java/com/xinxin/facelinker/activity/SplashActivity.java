@@ -27,6 +27,7 @@ import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.xinxin.facelinker.Config;
 import com.xinxin.facelinker.DemoHXSDKHelper;
+import com.xinxin.facelinker.domain.ReceiveNewPalInfo;
 import com.xinxin.facelinker.domain.Version;
 import com.xinxin.facelinker.utils.CommonUtils;
 
@@ -166,7 +167,7 @@ public class SplashActivity extends BaseActivity {
                             Thread.sleep(sleepTime);
                         } catch (InterruptedException e) {
                         }
-                        startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+                        startActivity(new Intent(SplashActivity.this, ShowPalsActivity.class));
                         finish();
                     }
                 }
