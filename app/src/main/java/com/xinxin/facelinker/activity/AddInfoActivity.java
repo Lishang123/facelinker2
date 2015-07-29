@@ -28,6 +28,7 @@ import com.lidroid.xutils.http.RequestParams;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
+import com.nostra13.universalimageloader.core.ImageLoader;
 import com.xinxin.facelinker.Config;
 import com.xinxin.facelinker.domain.FLUser;
 
@@ -134,13 +135,13 @@ public class AddInfoActivity extends Activity {
     }
 
     //转变uri为file类型
-
     private Uri convertUri(Uri uri){
         InputStream is=null;
         try {
             is=getContentResolver().openInputStream(uri);
             Bitmap bitmap= BitmapFactory.decodeStream(is);
             is.close();
+            System.out.println("convertUri");
             return saveBitmap(bitmap);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -152,14 +153,14 @@ public class AddInfoActivity extends Activity {
 
     //将Bitmap转变为file类型Uri
     private Uri saveBitmap(Bitmap bitmap){
-        File tmpDir=new File(Environment.getExternalStorageDirectory()+"com.xinxin.faceliner");
+        File tmpDir=new File(Environment.getExternalStorageDirectory()+"/com.xinxin.faceliner");
         if(!tmpDir.exists()) {
             tmpDir.mkdir();
         }
-        File img=new File(tmpDir.getAbsolutePath()+"user_picture.png");
+        File img=new File(tmpDir.getAbsolutePath()+"userpicture.png");
         try {
             FileOutputStream fos=new FileOutputStream(img);
-            bitmap.compress(Bitmap.CompressFormat.PNG, 90, fos);
+            bitmap.compress(Bitmap.CompressFormat.PNG, 85, fos);
             fos.flush();
             fos.close();
             return Uri.fromFile(img);
@@ -181,7 +182,7 @@ public class AddInfoActivity extends Activity {
         intent.putExtra("aspectY", 1);
         intent.putExtra("outputX", 150);
         intent.putExtra("outputY", 150);
-        intent.putExtra("return-data",true);
+        intent.putExtra("return-data", true);
         startActivityForResult(intent,CROP_REQUEST_CODE);
     }
 
