@@ -1174,7 +1174,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int activity_show_motion=0x7f030026;
         public static final int activity_show_my_motion=0x7f030027;
         public static final int activity_show_near_user_motion=0x7f030028;
-        public static final int activity_show_pals=0x7f030029;
+        public static final int fragment_show_pals =0x7f030029;
         public static final int activity_show_pals_motion=0x7f03002a;
         public static final int activity_splash=0x7f03002b;
         public static final int activity_video_call=0x7f03002c;

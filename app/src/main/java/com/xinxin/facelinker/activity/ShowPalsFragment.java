@@ -1,10 +1,12 @@
 package com.xinxin.facelinker.activity;
 
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -25,7 +27,7 @@ import com.xinxin.facelinker.domain.ShowPals;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShowPalsFragment extends Activity {
+public class ShowPalsFragment extends Fragment {
 
     private Button btnSearch;
     private ListView lvShowPals;
@@ -36,21 +38,20 @@ public class ShowPalsFragment extends Activity {
     private HttpUtils httpUtils = new HttpUtils();
     private List<ShowPals> list = new ArrayList<ShowPals>();
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_show_pals);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.fragment_show_pals, container, false);
 
-        btnSearch = (Button) findViewById(R.id.btnSearch);
-        lvShowPals = (ListView) findViewById(R.id.lvShowPals);
-        etSearch = (EditText) findViewById(R.id.etSearch);
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
+        btnSearch = (Button) root.findViewById(R.id.btnSearch);
+        lvShowPals = (ListView) root.findViewById(R.id.lvShowPals);
+        etSearch = (EditText) root.findViewById(R.id.etSearch);
+        adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1);
         lvShowPals.setAdapter(adapter);
-        my_account_num = Config.getCachedAccountNum(ShowPalsFragment.this);
+        my_account_num = Config.getCachedAccountNum(getActivity());
 
         //测试
 
-        final ProgressDialog pd = ProgressDialog.show(ShowPalsFragment.this, getResources().getString(R.string.get_contacts_connecting), getResources().getString(R.string.get_contacts_connecting_to_server));
+        final ProgressDialog pd = ProgressDialog.show(getActivity(), getResources().getString(R.string.get_contacts_connecting), getResources().getString(R.string.get_contacts_connecting_to_server));
 //        new ShowPalsNet(my_account_num, new ShowPalsNet.SuccessCallback() {
         RequestParams params = new RequestParams();
         params.addBodyParameter(Config.ACTION, Config.ACTION_SHOW_PALS);
@@ -73,16 +74,17 @@ public class ShowPalsFragment extends Activity {
                             @Override
                             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                                 other_account_num = list.get(position).getOther_account_num();
-                                Intent intent = new Intent(ShowPalsFragment.this, GetPalInfoActivity.class);
+                                Intent intent = new Intent(getActivity(), GetPalInfoActivity.class);
                                 intent.putExtra(Config.KEY_OTHER_ACCOUNT_NUM, other_account_num);
                                 startActivity(intent);
                             }
                         });
                     }
+
                     @Override
                     public void onFailure(HttpException e, String s) {
                         pd.dismiss();
-                        Toast.makeText(ShowPalsFragment.this, R.string.get_contacts_fail, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), R.string.get_contacts_fail, Toast.LENGTH_SHORT).show();
                     }
                 }
         );
@@ -90,16 +92,18 @@ public class ShowPalsFragment extends Activity {
         btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String search_user_account_num=etSearch.getText().toString();
+                String search_user_account_num = etSearch.getText().toString();
 
-                if(etSearch.getText().toString().isEmpty()==true){
-                    Toast.makeText(ShowPalsFragment.this, R.string.search_can_not_be_empty, Toast.LENGTH_SHORT).show();
+                if (etSearch.getText().toString().isEmpty() == true) {
+                    Toast.makeText(getActivity(), R.string.search_can_not_be_empty, Toast.LENGTH_SHORT).show();
                     return;
                 }
-                Intent intent=new Intent(ShowPalsFragment.this,SearchUserActivity.class);
-                intent.putExtra(Config.KEY_SEARCH_USER_ACCOUNT_NUM,search_user_account_num);
+                Intent intent = new Intent(getActivity(), SearchUserActivity.class);
+                intent.putExtra(Config.KEY_SEARCH_USER_ACCOUNT_NUM, search_user_account_num);
                 startActivity(intent);
             }
         });
+
+        return root;
     }
 }
