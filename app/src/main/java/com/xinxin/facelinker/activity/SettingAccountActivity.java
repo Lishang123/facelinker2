@@ -96,7 +96,7 @@ public class SettingAccountActivity extends Activity {
                     public void onClick(DialogInterface dialog, int which) {
 
                     }
-                });
+                }).show();
 
             }
         });

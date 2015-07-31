@@ -618,39 +618,43 @@ activity#com.xinxin.facelinker.activity.ShowBlacklistActivity
 ADDED from AndroidManifest.xml:341:9
 	android:name
 		ADDED from AndroidManifest.xml:341:19
-activity#com.xinxin.facelinker.activity.ShowMyMotionActivity
+activity#com.xinxin.facelinker.activity.SettingPersonInfoActivity
 ADDED from AndroidManifest.xml:342:9
+	android:name
+		ADDED from AndroidManifest.xml:342:19
+activity#com.xinxin.facelinker.activity.ShowMyMotionActivity
+ADDED from AndroidManifest.xml:343:9
 	android:label
+		ADDED from AndroidManifest.xml:345:13
+	android:name
 		ADDED from AndroidManifest.xml:344:13
-	android:name
-		ADDED from AndroidManifest.xml:343:13
 activity#com.xinxin.facelinker.activity.ShowNearUserMotionActivity
-ADDED from AndroidManifest.xml:346:9
+ADDED from AndroidManifest.xml:347:9
 	android:label
+		ADDED from AndroidManifest.xml:349:13
+	android:name
 		ADDED from AndroidManifest.xml:348:13
-	android:name
-		ADDED from AndroidManifest.xml:347:13
 activity#com.xinxin.facelinker.activity.ShowPalsActivity
-ADDED from AndroidManifest.xml:350:9
+ADDED from AndroidManifest.xml:351:9
 	android:label
+		ADDED from AndroidManifest.xml:353:13
+	android:name
 		ADDED from AndroidManifest.xml:352:13
-	android:name
-		ADDED from AndroidManifest.xml:351:13
 activity#com.xinxin.facelinker.activity.ShowPalsMotionActivity
-ADDED from AndroidManifest.xml:354:9
+ADDED from AndroidManifest.xml:355:9
 	android:label
+		ADDED from AndroidManifest.xml:357:13
+	android:name
 		ADDED from AndroidManifest.xml:356:13
-	android:name
-		ADDED from AndroidManifest.xml:355:13
 activity#com.xinxin.facelinker.activity.SendNewPalMessageActivity
-ADDED from AndroidManifest.xml:358:9
+ADDED from AndroidManifest.xml:359:9
 	android:label
+		ADDED from AndroidManifest.xml:361:13
+	android:name
 		ADDED from AndroidManifest.xml:360:13
-	android:name
-		ADDED from AndroidManifest.xml:359:13
 activity#com.xinxin.facelinker.activity.ForgetPasswordActivity
-ADDED from AndroidManifest.xml:362:9
+ADDED from AndroidManifest.xml:363:9
 	android:label
-		ADDED from AndroidManifest.xml:364:13
+		ADDED from AndroidManifest.xml:365:13
 	android:name
-		ADDED from AndroidManifest.xml:363:13
+		ADDED from AndroidManifest.xml:364:13

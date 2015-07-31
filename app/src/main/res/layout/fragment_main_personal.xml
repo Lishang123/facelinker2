@@ -254,7 +254,7 @@
                         android:layout_marginLeft="10.0dip" />
                 </LinearLayout>
 
-                <include layout="@layout/myinfo_item_line" />
+<!--                <include layout="@layout/myinfo_item_line" />
 
                 <LinearLayout
                     android:id="@+id/ll_othersettings"
@@ -274,7 +274,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10.0dip" />
-                </LinearLayout>
+                </LinearLayout>-->
             </LinearLayout>
 
             <TextView

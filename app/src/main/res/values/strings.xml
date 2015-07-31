@@ -279,7 +279,6 @@
     <string name="illegal_user_name">Illegal user name</string>
     <string name="robot_chat">Robot chat</string>
     <string name="string_motion">Motion</string>
-<!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="personal_page">mine</string>
     <string name="about">about</string>
@@ -293,7 +292,6 @@
     <string name="system_settings">system settings</string>
     <string name="myblacklist">my blacklist</string>
     <string name="myfootprint">my foot print</string>
-    <string name="myconcern">concern</string>
     <string name="myfriends">my pals</string>
     <string name="personal_relation">relation</string>
     <string name="modify_data">modify data</string>

@@ -5,7 +5,9 @@ import com.lidroid.xutils.db.annotation.NotNull;
 /**
  * Created by xinxin on 2015/7/25.
  */
-public class FLUser extends EntityBase {
+public class FLUser {
+    @NotNull
+    String id;
     @NotNull
     String account;
     @NotNull
@@ -23,23 +25,13 @@ public class FLUser extends EntityBase {
     String job;
     String mood;
 
-    @Override
-    public String toString() {
-        return "FLUser{" +
-                "account='" + account + '\'' +
-                ", name='" + name + '\'' +
-                ", server_id='" + server_id + '\'' +
-                ", photourl='" + photourl + '\'' +
-                ", gender='" + gender + '\'' +
-                ", age='" + age + '\'' +
-                ", location='" + location + '\'' +
-                ", honour='" + honour + '\'' +
-                ", lasttime='" + lasttime + '\'' +
-                ", phone='" + phone + '\'' +
-                ", email='" + email + '\'' +
-                ", job='" + job + '\'' +
-                ", mood='" + mood + '\'' +
-                '}';
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getAccount() {
@@ -146,7 +138,28 @@ public class FLUser extends EntityBase {
         this.mood = mood;
     }
 
-    public FLUser(String account, String name, String server_id, String photourl, String gender, String age, String location, String honour, String lasttime, String phone, String email, String job, String mood) {
+    @Override
+    public String toString() {
+        return "FLUser{" +
+                "id='" + id + '\'' +
+                ", account='" + account + '\'' +
+                ", name='" + name + '\'' +
+                ", server_id='" + server_id + '\'' +
+                ", photourl='" + photourl + '\'' +
+                ", gender='" + gender + '\'' +
+                ", age='" + age + '\'' +
+                ", location='" + location + '\'' +
+                ", honour='" + honour + '\'' +
+                ", lasttime='" + lasttime + '\'' +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                ", job='" + job + '\'' +
+                ", mood='" + mood + '\'' +
+                '}';
+    }
+
+    public FLUser(String id, String account, String name, String server_id, String photourl, String gender, String age, String location, String honour, String lasttime, String phone, String email, String job, String mood) {
+        this.id = id;
         this.account = account;
         this.name = name;
         this.server_id = server_id;
