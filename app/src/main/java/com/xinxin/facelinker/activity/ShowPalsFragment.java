@@ -13,8 +13,6 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.easemob.chatuidemo.R;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.RequestParams;
@@ -27,7 +25,7 @@ import com.xinxin.facelinker.domain.ShowPals;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShowPalsActivity extends Activity {
+public class ShowPalsFragment extends Activity {
 
     private Button btnSearch;
     private ListView lvShowPals;
@@ -48,11 +46,11 @@ public class ShowPalsActivity extends Activity {
         etSearch = (EditText) findViewById(R.id.etSearch);
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
         lvShowPals.setAdapter(adapter);
-        my_account_num = Config.getCachedAccountNum(ShowPalsActivity.this);
+        my_account_num = Config.getCachedAccountNum(ShowPalsFragment.this);
 
         //测试
 
-        final ProgressDialog pd = ProgressDialog.show(ShowPalsActivity.this, getResources().getString(R.string.get_contacts_connecting), getResources().getString(R.string.get_contacts_connecting_to_server));
+        final ProgressDialog pd = ProgressDialog.show(ShowPalsFragment.this, getResources().getString(R.string.get_contacts_connecting), getResources().getString(R.string.get_contacts_connecting_to_server));
 //        new ShowPalsNet(my_account_num, new ShowPalsNet.SuccessCallback() {
         RequestParams params = new RequestParams();
         params.addBodyParameter(Config.ACTION, Config.ACTION_SHOW_PALS);
@@ -75,7 +73,7 @@ public class ShowPalsActivity extends Activity {
                             @Override
                             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                                 other_account_num = list.get(position).getOther_account_num();
-                                Intent intent = new Intent(ShowPalsActivity.this, GetPalInfoActivity.class);
+                                Intent intent = new Intent(ShowPalsFragment.this, GetPalInfoActivity.class);
                                 intent.putExtra(Config.KEY_OTHER_ACCOUNT_NUM, other_account_num);
                                 startActivity(intent);
                             }
@@ -84,7 +82,7 @@ public class ShowPalsActivity extends Activity {
                     @Override
                     public void onFailure(HttpException e, String s) {
                         pd.dismiss();
-                        Toast.makeText(ShowPalsActivity.this, R.string.get_contacts_fail, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ShowPalsFragment.this, R.string.get_contacts_fail, Toast.LENGTH_SHORT).show();
                     }
                 }
         );
@@ -95,10 +93,10 @@ public class ShowPalsActivity extends Activity {
                 String search_user_account_num=etSearch.getText().toString();
 
                 if(etSearch.getText().toString().isEmpty()==true){
-                    Toast.makeText(ShowPalsActivity.this, R.string.search_can_not_be_empty, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ShowPalsFragment.this, R.string.search_can_not_be_empty, Toast.LENGTH_SHORT).show();
                     return;
                 }
-                Intent intent=new Intent(ShowPalsActivity.this,SearchUserActivity.class);
+                Intent intent=new Intent(ShowPalsFragment.this,SearchUserActivity.class);
                 intent.putExtra(Config.KEY_SEARCH_USER_ACCOUNT_NUM,search_user_account_num);
                 startActivity(intent);
             }

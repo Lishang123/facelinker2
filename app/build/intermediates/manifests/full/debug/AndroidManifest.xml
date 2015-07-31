@@ -300,70 +300,70 @@
         <activity
             android:name="com.xinxin.facelinker.activity.SettingAccountActivity"
             android:label="@string/title_activity_setting_account"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.SettingOthersActivity"
             android:label="@string/title_activity_setting_others"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.AddInfoActivity"
-            android:label="@string/title_activity_add_info" >
-        </activity>
+            android:label="@string/title_activity_add_info"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.AddMyMotionActivity"
-            android:label="@string/title_activity_add_my_motion" >
-        </activity>
+            android:label="@string/title_activity_add_my_motion"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.GetPalInfoActivity"
-            android:label="@string/title_activity_get_pal_info" >
-        </activity>
+            android:label="@string/title_activity_get_pal_info"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.LogonActivity"
-            android:label="@string/title_activity_logon" >
-        </activity>
+            android:label="@string/title_activity_logon"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.ReceiveNewPalInfoActivity"
-            android:label="@string/title_activity_receive_new_pal_info" >
-        </activity>
+            android:label="@string/title_activity_receive_new_pal_info"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.ReceiveNewPalsActivity"
-            android:label="@string/title_activity_receive_new_pals" >
-        </activity>
+            android:label="@string/title_activity_receive_new_pals"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.SearchUserActivity"
-            android:label="@string/title_activity_search_user" >
-        </activity>
+            android:label="@string/title_activity_search_user"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.ShowMotionActivity"
-            android:label="@string/title_activity_show_motion" >
-        </activity>
-        <activity android:name="com.xinxin.facelinker.activity.ShowBlacklistActivity" />
+            android:label="@string/title_activity_show_motion"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.xinxin.facelinker.activity.ShowBlacklistActivity"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.ShowMyMotionActivity"
-            android:label="@string/title_activity_show_my_motion" >
-        </activity>
+            android:label="@string/title_activity_show_my_motion"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.ShowNearUserMotionActivity"
-            android:label="@string/title_activity_show_near_user_motion" >
-        </activity>
+            android:label="@string/title_activity_show_near_user_motion"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.ShowPalsActivity"
-            android:label="@string/title_activity_show_pals" >
-        </activity>
+            android:label="@string/title_activity_show_pals"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.ShowPalsMotionActivity"
-            android:label="@string/title_activity_show_pals_motion" >
-        </activity>
+            android:label="@string/title_activity_show_pals_motion"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.SendNewPalMessageActivity"
-            android:label="@string/title_activity_send_new_pal_message" >
-        </activity>
+            android:label="@string/title_activity_send_new_pal_message"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.ForgetPasswordActivity"
-            android:label="@string/title_activity_forget_password" >
-        </activity>
+            android:label="@string/title_activity_forget_password"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
     </application>
 
 </manifest>

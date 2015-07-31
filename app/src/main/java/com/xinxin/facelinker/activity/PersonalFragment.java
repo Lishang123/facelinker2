@@ -149,7 +149,7 @@ public class PersonalFragment extends Fragment implements OnClickListener {
                 ChangePersonInfo();
                 break;
             case R.id.rv_pals:
-                startActivity(new Intent(getActivity(), ShowPalsActivity.class));
+                startActivity(new Intent(getActivity(), ShowPalsFragment.class));
                 break;
             case R.id.rl_groups:
                 startActivity(new Intent(getActivity(), GroupsActivity.class));
