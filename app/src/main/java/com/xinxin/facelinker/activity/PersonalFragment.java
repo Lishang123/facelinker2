@@ -67,10 +67,10 @@ public class PersonalFragment extends Fragment implements OnClickListener {
      * 账号设置
      */
     private LinearLayout ll_accountsettings;
-    /**
-     * 其他设置，例如清除缓存等
-     */
-    private LinearLayout ll_othersettings;
+//    /**
+//     * 其他设置，例如清除缓存等
+//     */
+//    private LinearLayout ll_othersettings;
     /**
      * 评分
      */
@@ -103,13 +103,18 @@ public class PersonalFragment extends Fragment implements OnClickListener {
         if (savedInstanceState != null && savedInstanceState.getBoolean("isConflict", false))
             return;
         init();
+        //初始化头像区显示的内容
+
+
+
+
         iv_personal_head.setOnClickListener(this);
         ll_personal_head.setOnClickListener(this);
         rl_groups.setOnClickListener(this);
         rl_blacklist.setOnClickListener(this);
         ll_chatsettings.setOnClickListener(this);
         ll_accountsettings.setOnClickListener(this);
-        ll_othersettings.setOnClickListener(this);
+//        ll_othersettings.setOnClickListener(this);
         ll_rating.setOnClickListener(this);
         ll_feedback.setOnClickListener(this);
         ll_about.setOnClickListener(this);
@@ -128,7 +133,7 @@ public class PersonalFragment extends Fragment implements OnClickListener {
         rl_blacklist = (RelativeLayout) getView().findViewById(R.id.rl_blacklist);
         ll_chatsettings = (LinearLayout) getView().findViewById(R.id.ll_chatsettings);
         ll_accountsettings = (LinearLayout) getView().findViewById(R.id.ll_accountsettings);
-        ll_othersettings = (LinearLayout) getView().findViewById(R.id.ll_othersettings);
+//        ll_othersettings = (LinearLayout) getView().findViewById(R.id.ll_othersettings);
         ll_rating = (LinearLayout) getView().findViewById(R.id.ll_rating);
         ll_feedback = (LinearLayout) getView().findViewById(R.id.ll_feedback);
         ll_about = (LinearLayout) getView().findViewById(R.id.ll_about);
@@ -163,9 +168,9 @@ public class PersonalFragment extends Fragment implements OnClickListener {
             case R.id.ll_accountsettings:
                 startActivity(new Intent(getActivity(), SettingAccountActivity.class));
                 break;
-            case R.id.ll_othersettings:
-                startActivity(new Intent(getActivity(), SettingOthersActivity.class));
-                break;
+//            case R.id.ll_othersettings:
+//                startActivity(new Intent(getActivity(), SettingOthersActivity.class));
+//                break;
             case R.id.ll_rating:
                 rating(getActivity().getApplicationContext());
                 break;

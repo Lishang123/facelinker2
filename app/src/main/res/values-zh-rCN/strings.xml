@@ -296,4 +296,13 @@
     <string name="composer_info">作者信息</string>
     <string name="personal">我的</string>
     <string name="check_update_fail">检查网络更新失败</string>
+    <string name="chat_settings">聊天设置</string>
+    <string name="account_settings">账户设置</string>
+    <string name="system_settings">系统设置</string>
+    <string name="other">其他</string>
+    <string name="quit_login">退出</string>
+    <string name="rating">应用商店评分</string>
+    <string name="feedback">反馈</string>
+    <string name="about">关于</string>
+    <string name="other_settings">其他设置</string>
 </resources>

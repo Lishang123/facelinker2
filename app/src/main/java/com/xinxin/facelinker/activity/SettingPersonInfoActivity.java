@@ -32,7 +32,6 @@ import com.easemob.util.DeviceUuidFactory;
 import com.easemob.util.PathUtil;
 import com.lidroid.xutils.DbUtils;
 import com.lidroid.xutils.HttpUtils;
-import com.lidroid.xutils.db.sqlite.Selector;
 import com.lidroid.xutils.db.sqlite.WhereBuilder;
 import com.lidroid.xutils.exception.DbException;
 import com.lidroid.xutils.exception.HttpException;
@@ -44,7 +43,6 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.xinxin.facelinker.Config;
 import com.xinxin.facelinker.DemoApplication;
 import com.xinxin.facelinker.domain.FLUser;
-import com.xinxin.facelinker.domain.User;
 import com.xinxin.facelinker.utils.CommonUtils;
 import com.xinxin.facelinker.utils.ImageOptions;
 import com.xinxin.facelinker.utils.NetHelper;
@@ -186,16 +184,24 @@ public class SettingPersonInfoActivity extends Activity implements OnClickListen
         HttpUtils httpUtils = new HttpUtils();
         RequestParams params = new RequestParams();
         params.addBodyParameter(Config.ACTION, "getUserInfo");
-        httpUtils.send(HttpRequest.HttpMethod.POST, Config.CATEGORIES_URL, new RequestCallBack<String>() {
+        httpUtils.send(HttpRequest.HttpMethod.POST, Config.CATEGORIES_URL, params,new RequestCallBack<String>() {
+            @Override
+            public void onStart() {
+                super.onStart();
+                System.out.println("连接网络开始啦");
+            }
+
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
-                Log.d(LOG, "setting_qes" + responseInfo.result);
+                System.out.println(responseInfo.result);
                 pd.dismiss();
-                FLUser user = (FLUser) NetHelper.parseJsonData(responseInfo.result, FLUser.class);
+                user = (FLUser) NetHelper.parseJsonData(responseInfo.result, FLUser.class);
 //				将取得的信息存储在本地数据库
                 utils = DbUtils.create(getApplicationContext(), Environment.getExternalStorageDirectory() + "/", "Fluser.db");
                 try {
+                    utils.saveOrUpdate(user);
                     utils.update(user, WhereBuilder.b("account", "=", user.getAccount()));
+
                 } catch (DbException e) {
                     e.printStackTrace();
                 }
@@ -212,7 +218,9 @@ public class SettingPersonInfoActivity extends Activity implements OnClickListen
         //联网完毕，从本地数据库获取用户信息
         utils = DbUtils.create(getApplicationContext(), Environment.getExternalStorageDirectory() + "/", "Fluser.db");
         try {
-            user = utils.findFirst(Selector.from(User.class));
+           user = utils.findById(FLUser.class,user.getId());
+            System.out.println(user.toString());
+            Log.d(LOG,user.toString());
         } catch (DbException e) {
             e.printStackTrace();
         }
