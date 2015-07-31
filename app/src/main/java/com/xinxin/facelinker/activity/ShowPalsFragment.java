@@ -1,5 +1,6 @@
 package com.xinxin.facelinker.activity;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -38,6 +39,7 @@ public class ShowPalsFragment extends Fragment {
     private HttpUtils httpUtils = new HttpUtils();
     private List<ShowPals> list = new ArrayList<ShowPals>();
 
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_show_pals, container, false);
@@ -52,7 +54,6 @@ public class ShowPalsFragment extends Fragment {
         //测试
 
         final ProgressDialog pd = ProgressDialog.show(getActivity(), getResources().getString(R.string.get_contacts_connecting), getResources().getString(R.string.get_contacts_connecting_to_server));
-//        new ShowPalsNet(my_account_num, new ShowPalsNet.SuccessCallback() {
         RequestParams params = new RequestParams();
         params.addBodyParameter(Config.ACTION, Config.ACTION_SHOW_PALS);
         params.addBodyParameter(Config.KEY_MY_ACCOUNT_NUM, my_account_num);

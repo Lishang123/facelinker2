@@ -67,9 +67,13 @@ public class LogonActivity extends Activity  {
                     return;
                 }
 
-                if(!getLogonVerificationCode.getCode().equals(etCheck.getText().toString())){
-                    Toast.makeText(LogonActivity.this, R.string.verification_code_wrong, Toast.LENGTH_SHORT).show();
-                    return;
+                try {
+                    if (!getLogonVerificationCode.getCode().equals(etCheck.getText().toString())) {
+                        Toast.makeText(LogonActivity.this, R.string.verification_code_wrong, Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                }catch (Exception e){
+                    Toast.makeText(LogonActivity.this, "验证失败", Toast.LENGTH_SHORT).show();
                 }
 
                 final ProgressDialog pd = ProgressDialog.show(LogonActivity.this, getResources().getString(R.string.logon_connecting), getResources().getString(R.string.logon_connecting_to_server));

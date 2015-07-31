@@ -167,7 +167,7 @@ public class SplashActivity extends BaseActivity {
                             Thread.sleep(sleepTime);
                         } catch (InterruptedException e) {
                         }
-                        startActivity(new Intent(SplashActivity.this,AddInfoActivity.class));
+                        startActivity(new Intent(SplashActivity.this,ShowNearUserMotionActivity.class));
                         finish();
                     }
                 }
