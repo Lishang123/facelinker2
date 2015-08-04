@@ -59,6 +59,7 @@ public class AddInfoActivity extends Activity {
     private static int CROP_REQUEST_CODE = 3;
     private String[] array=new String[]{"摄像头", "图库"};
     private int selectNum=0;
+    private String ImageName=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -189,16 +190,21 @@ public class AddInfoActivity extends Activity {
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == CAMERA_REQUEST_CODE) {
-            if (data == null)
+            if (data == null) {
+                File picture = new File(Environment.getExternalStorageDirectory()+
+                        File.separator+ImageName);
+                Uri uri = Uri.fromFile(picture);
+                startImageZoom(uri);
                 return;
-            else {
+
+            } else {
                 Bundle extras = data.getExtras();
                 if (extras != null) {
                     Bitmap bm = extras.getParcelable("data");
                     Uri uri=saveBitmap(bm);
 
                     //向数据库中保存图片地址
-                    startImageZoom(uri);
+                    //startImageZoom(uri);
                 }
             }
         }else if(requestCode==GALLERY_REQUEST_CODE){
@@ -240,8 +246,13 @@ public class AddInfoActivity extends Activity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         if (array[selectNum].equals("摄像头")) {
-                            Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                            startActivityForResult(intent,CAMERA_REQUEST_CODE);
+                            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                            ImageName = System.currentTimeMillis()+".jpg";
+                            intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(new File(
+                                    Environment.getExternalStorageDirectory()
+                                    , ImageName)));
+                            startActivityForResult(intent, CAMERA_REQUEST_CODE);
+
                         } else {
                             Intent intent=new Intent(Intent.ACTION_GET_CONTENT);
                             intent.setType("image/*");

@@ -41,6 +41,9 @@ public class Config {
     public static final String ACTION_REFUSE_ADD_NEW_PAL = "refuse_add_new_pal";
     public static final String ACTION_SEND_NEW_PAL_MESSAGE = "send_new_pal_message";
     public static final String ACTION_GET_LOGON_VERIFICATION_CODE = "get_logon_verification_code";
+    public static final String ACTION_SHOW_MALE_TOPLIST = "show_male_toplist";
+    public static final String ACTION_SHOW_FEMALE_TOPLIST = "show_female_toplist";
+
 
     public static final String APP_ID = "com.xinxin.facelinker";
     public static final String KEY_TOKEN = "token";

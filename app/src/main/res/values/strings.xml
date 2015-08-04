@@ -260,7 +260,7 @@
     <string name="dismiss_group">Dismiss group</string>
     <string name="add_public_group_chat">Add public group</string>
     <string name="gorup_not_found">Can not find this group</string>
-    <string name= "no_more_messages">no more messages</string>
+    <string name="no_more_messages">no more messages</string>
     <string name="join_public_group">Join public group</string>
     <string name="chatroom_allow_owner_leave">Allow chatroom owner leave</string>
     <string name="group_id">Group ID</string>
@@ -448,4 +448,16 @@
     <string name="camera">摄像头</string>
     <string name="gallery">图库</string>
     <string name="select_uploda_picture_method">上传头像方式</string>
+
+    <string name="title_activity_show_male_toplist">ShowMaleToplistActivity</string>
+    <string name="show_male_toplist_success">获取男神榜成功</string>
+    <string name="show_male_toplist_fail">获取男神榜失败</string>
+    <string name="show_male_toplist_connecting">加载中</string>
+    <string name="show_male_toplist_connecting_to_server">正在加载男神榜，请稍后</string>
+
+    <string name="title_activity_show_female_toplist">ShowFemaleToplistActivity</string>
+    <string name="show_female_toplist_success">获取女神榜成功</string>
+    <string name="show_female_toplist_fail">获取女神榜失败</string>
+    <string name="show_female_toplist_connecting">加载中</string>
+    <string name="show_female_toplist_connecting_to_server">正在加载女神榜，请稍后</string>
 </resources>
