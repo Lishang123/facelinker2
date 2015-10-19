@@ -306,6 +306,7 @@
         <activity
             android:name="com.xinxin.facelinker.activity.SettingOthersActivity"
             android:label="@string/title_activity_setting_others"
+<<<<<<< HEAD
             android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.AddInfoActivity"
@@ -365,6 +366,10 @@
             android:name="com.xinxin.facelinker.activity.ForgetPasswordActivity"
             android:label="@string/title_activity_forget_password"
             android:theme="@style/horizontal_slide" />
+=======
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+>>>>>>> parent of 9ed2cb5... 实现了账号设置
     </application>
 
 </manifest>

@@ -569,6 +569,7 @@ ADDED from AndroidManifest.xml:305:9
 	android:theme
 		ADDED from AndroidManifest.xml:308:13
 	android:name
+<<<<<<< HEAD
 		ADDED from AndroidManifest.xml:306:13
 activity#com.xinxin.facelinker.activity.AddInfoActivity
 ADDED from AndroidManifest.xml:309:9
@@ -686,3 +687,6 @@ ADDED from AndroidManifest.xml:363:9
 		ADDED from AndroidManifest.xml:366:13
 	android:name
 		ADDED from AndroidManifest.xml:364:13
+=======
+		ADDED from AndroidManifest.xml:305:13
+>>>>>>> parent of 9ed2cb5... 实现了账号设置

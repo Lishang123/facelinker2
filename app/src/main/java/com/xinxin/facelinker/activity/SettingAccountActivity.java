@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -22,7 +23,7 @@ import com.lidroid.xutils.http.client.HttpRequest;
 import com.xinxin.facelinker.Config;
 
 public class SettingAccountActivity extends Activity {
-    View left_title;
+    Button left_title;
     TextView center_title;
     LinearLayout ll_change_person_info;
     LinearLayout ll_change_password;
@@ -32,7 +33,7 @@ public class SettingAccountActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting_account);
-        left_title = (View) findViewById(R.id.left_title);
+        left_title = (Button) findViewById(R.id.left_title);
         center_title = (TextView) findViewById(R.id.center_title);
         ll_change_person_info = (LinearLayout) findViewById(R.id.ll_change_person_info);
         ll_change_password = (LinearLayout) findViewById(R.id.ll_change_password);
@@ -54,10 +55,10 @@ public class SettingAccountActivity extends Activity {
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
                 builder.setTitle("重新设置密码");
-                final EditText editText1 = new EditText(getApplicationContext());
+                EditText editText1 = new EditText(getApplicationContext());
                 editText1.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
                 editText1.setHint("请输入新密码");
-                final EditText editText2 = new EditText(getApplicationContext());
+                EditText editText2 = new EditText(getApplicationContext());
                 editText2.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
                 editText1.setHint("请再次输入新密码");
                 LinearLayout linearLayout = new LinearLayout(getApplicationContext());

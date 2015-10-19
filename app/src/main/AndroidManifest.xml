@@ -336,6 +336,7 @@
             android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.xinxin.facelinker.activity.ShowMotionActivity"
+<<<<<<< HEAD
             android:label="@string/title_activity_show_motion"
             android:theme="@style/horizontal_slide" />
         <activity
@@ -344,6 +345,10 @@
         <activity
             android:name="com.xinxin.facelinker.activity.SettingPersonInfoActivity"
             android:theme="@style/horizontal_slide" />
+=======
+            android:label="@string/title_activity_show_motion" >
+        </activity>
+>>>>>>> parent of 9ed2cb5... 实现了账号设置
         <activity
             android:name="com.xinxin.facelinker.activity.ShowMyMotionActivity"
             android:label="@string/title_activity_show_my_motion"

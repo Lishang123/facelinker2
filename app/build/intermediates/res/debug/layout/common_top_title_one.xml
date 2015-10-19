@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:gravity="center"
@@ -17,10 +18,14 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true">
 
-            <include
+            <Button
                 android:id="@+id/left_title"
-                layout="@layout/commom_back_btn" />
-
+                style="@style/top_title_text_style"
+                android:layout_marginLeft="5.0dip"
+                android:background="@drawable/arrow_left"
+                android:clickable="true"
+                android:gravity="left|center"
+                android:textSize="22.0sp" />
 
             <ImageView
                 android:id="@id/left_dot"
@@ -73,6 +78,7 @@
             style="@style/layout_wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true">
+
 
 
             <ImageView
