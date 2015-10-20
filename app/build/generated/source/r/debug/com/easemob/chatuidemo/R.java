@@ -1116,6 +1116,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 =======
         public static final int ScrollView=0x7f0d003d;
 <<<<<<< HEAD
+<<<<<<< HEAD
         public static final int action_settings=0x7f0d0149;
         public static final int add_list_friends=0x7f0d000b;
         public static final int add_to_blacklist=0x7f0d0143;
@@ -1124,6 +1125,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int avatar_container=0x7f0d0116;
         public static final int badge_delete=0x7f0d0108;
 =======
+=======
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int action_settings=0x7f0d014c;
         public static final int add_list_friends=0x7f0d000b;
         public static final int add_to_blacklist=0x7f0d0146;
@@ -1131,6 +1134,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int avatar=0x7f0d000f;
         public static final int avatar_container=0x7f0d0119;
         public static final int badge_delete=0x7f0d010b;
+<<<<<<< HEAD
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
+=======
 >>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int bar_bottom=0x7f0d0019;
         public static final int bmapView=0x7f0d0013;
@@ -1147,7 +1153,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int btn_container_setting=0x7f0d0067;
         public static final int btn_conversation=0x7f0d005f;
 <<<<<<< HEAD
+<<<<<<< HEAD
         public static final int btn_exit=0x7f0d010c;
+=======
+        public static final int btn_exit=0x7f0d010f;
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
 =======
         public static final int btn_exit=0x7f0d010f;
 >>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
@@ -1181,6 +1191,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 =======
         public static final int button=0x7f0d00ee;
         public static final int button_avatar=0x7f0d0108;
+<<<<<<< HEAD
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
+=======
 >>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int button_uploadlog=0x7f0d003a;
         public static final int cb_member_inviter=0x7f0d006e;
@@ -1189,6 +1202,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int center_title=0x7f0d00c6;
         public static final int center_title_iv=0x7f0d00c7;
         public static final int chat_swipe_layout=0x7f0d0034;
+<<<<<<< HEAD
 <<<<<<< HEAD
         public static final int chatting_click_area=0x7f0d0132;
         public static final int chatting_content_iv=0x7f0d0133;
@@ -1199,6 +1213,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int checkbox=0x7f0d011b;
         public static final int chronometer=0x7f0d00aa;
 =======
+=======
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int chatting_click_area=0x7f0d0135;
         public static final int chatting_content_iv=0x7f0d0136;
         public static final int chatting_length_iv=0x7f0d00b0;
@@ -1213,6 +1229,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int container_make_appointment=0x7f0d0031;
         public static final int container_remove=0x7f0d0018;
 <<<<<<< HEAD
+<<<<<<< HEAD
         public static final int container_status_btn=0x7f0d0135;
         public static final int container_to_group=0x7f0d0015;
         public static final int container_video_call=0x7f0d002f;
@@ -1222,6 +1239,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int delete_message=0x7f0d0148;
         public static final int edit=0x7f0d00bb;
 =======
+=======
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int container_status_btn=0x7f0d0138;
         public static final int container_to_group=0x7f0d0015;
         public static final int container_video_call=0x7f0d002f;
@@ -1246,6 +1265,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int gridview=0x7f0d0042;
         public static final int group_name=0x7f0d0041;
 <<<<<<< HEAD
+<<<<<<< HEAD
         public static final int header=0x7f0d0114;
         public static final int help_feedback=0x7f0d003e;
         public static final int image=0x7f0d00a1;
@@ -1269,6 +1289,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int iv_personal_head=0x7f0d00eb;
         public static final int iv_sendPicture=0x7f0d012f;
 =======
+=======
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int header=0x7f0d0117;
         public static final int help_feedback=0x7f0d003e;
         public static final int image=0x7f0d008e;
@@ -1291,6 +1313,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int iv_password2=0x7f0d0077;
         public static final int iv_personal_head=0x7f0d00da;
         public static final int iv_sendPicture=0x7f0d0132;
+<<<<<<< HEAD
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
+=======
 >>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int iv_switch_block_groupmsg=0x7f0d004a;
         public static final int iv_switch_chatroom_owner_leave_allow=0x7f0d00e5;
@@ -1304,6 +1329,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int iv_switch_open_speaker=0x7f0d00de;
         public static final int iv_switch_open_vibrate=0x7f0d00db;
         public static final int iv_switch_unblock_groupmsg=0x7f0d004b;
+<<<<<<< HEAD
 <<<<<<< HEAD
         public static final int iv_unread_voice=0x7f0d013a;
         public static final int iv_user_photo=0x7f0d0075;
@@ -1331,6 +1357,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int ll_coming_call=0x7f0d00b4;
         public static final int ll_common_head=0x7f0d00c4;
 =======
+=======
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int iv_unread_voice=0x7f0d013d;
         public static final int iv_user_photo=0x7f0d00f6;
         public static final int iv_userhead=0x7f0d0124;
@@ -1374,6 +1402,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int ll_layout=0x7f0d012f;
         public static final int ll_loading=0x7f0d00bc;
         public static final int ll_location=0x7f0d0141;
+<<<<<<< HEAD
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
+=======
 >>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int ll_open_invite=0x7f0d006d;
         public static final int ll_othersettings=0x7f0d00f8;
@@ -1394,6 +1425,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int ll_voice_control=0x7f0d00b0;
         public static final int loading=0x7f0d0050;
 <<<<<<< HEAD
+<<<<<<< HEAD
         public static final int loading_bar=0x7f0d0109;
         public static final int loading_layout=0x7f0d00a3;
         public static final int loading_text=0x7f0d010a;
@@ -1408,6 +1440,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int msg_state=0x7f0d0118;
         public static final int msg_status=0x7f0d013b;
 =======
+=======
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int loading_bar=0x7f0d010c;
         public static final int loading_layout=0x7f0d0090;
         public static final int loading_text=0x7f0d010d;
@@ -1421,6 +1455,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int more=0x7f0d0024;
         public static final int msg_state=0x7f0d011b;
         public static final int msg_status=0x7f0d013e;
+<<<<<<< HEAD
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
+=======
 >>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int name=0x7f0d0010;
         public static final int none=0x7f0d0000;
@@ -1428,6 +1465,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int password=0x7f0d005a;
         public static final int pb_load_local=0x7f0d00a2;
         public static final int pb_load_more=0x7f0d0033;
+<<<<<<< HEAD
 <<<<<<< HEAD
         public static final int pb_sending=0x7f0d0124;
         public static final int percentage=0x7f0d0130;
@@ -1447,6 +1485,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int rl_error_item=0x7f0d00d1;
         public static final int rl_group=0x7f0d0113;
 =======
+=======
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int pb_sending=0x7f0d0127;
         public static final int percentage=0x7f0d0133;
         public static final int progressBar=0x7f0d0040;
@@ -1464,11 +1504,15 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int rl_change_group_name=0x7f0d0047;
         public static final int rl_error_item=0x7f0d00c0;
         public static final int rl_group=0x7f0d0116;
+<<<<<<< HEAD
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
+=======
 >>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int rl_group_id=0x7f0d0043;
         public static final int rl_groups=0x7f0d00f1;
         public static final int rl_list=0x7f0d00cc;
         public static final int rl_password=0x7f0d0058;
+<<<<<<< HEAD
 <<<<<<< HEAD
         public static final int rl_picture=0x7f0d013f;
         public static final int rl_searched_group=0x7f0d0089;
@@ -1522,6 +1566,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int time=0x7f0d0117;
         public static final int timestamp=0x7f0d0120;
 =======
+=======
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int rl_picture=0x7f0d0142;
         public static final int rl_searched_group=0x7f0d0076;
         public static final int rl_switch_block_groupmsg=0x7f0d0049;
@@ -1574,12 +1620,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int textview4=0x7f0d00d2;
         public static final int time=0x7f0d011a;
         public static final int timestamp=0x7f0d0123;
+<<<<<<< HEAD
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
+=======
 >>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int title=0x7f0d0005;
         public static final int top=0x7f0d0004;
         public static final int topLayout=0x7f0d00b7;
         public static final int top_bar=0x7f0d0014;
         public static final int triangle=0x7f0d0001;
+<<<<<<< HEAD
 <<<<<<< HEAD
         public static final int tvTitle=0x7f0d012b;
         public static final int tv_=0x7f0d00f5;
@@ -1603,6 +1653,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int tv_file_state=0x7f0d0127;
         public static final int tv_groupName=0x7f0d011f;
 =======
+=======
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int tvTitle=0x7f0d012e;
         public static final int tv_=0x7f0d00e4;
         public static final int tv_ack=0x7f0d013f;
@@ -1624,6 +1676,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int tv_file_size=0x7f0d0129;
         public static final int tv_file_state=0x7f0d012a;
         public static final int tv_groupName=0x7f0d0122;
+<<<<<<< HEAD
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
+=======
 >>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int tv_group_id=0x7f0d0044;
         public static final int tv_group_id_value=0x7f0d0045;
@@ -1671,6 +1726,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int tv_user_zhanghao=0x7f0d00f8;
         public static final int tv_user_zhiye=0x7f0d0102;
         public static final int tv_userid=0x7f0d0125;
+<<<<<<< HEAD
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
+=======
 >>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int tv_version=0x7f0d0039;
         public static final int tv_version_update=0x7f0d0007;
@@ -1679,15 +1737,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int unread_motion_number=0x7f0d0066;
         public static final int unread_msg_number=0x7f0d0060;
 <<<<<<< HEAD
+<<<<<<< HEAD
         public static final int update_blacklist=0x7f0d0145;
         public static final int update_contacts=0x7f0d0144;
         public static final int update_groups=0x7f0d0146;
         public static final int user_state=0x7f0d011d;
 =======
+=======
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int update_blacklist=0x7f0d0148;
         public static final int update_contacts=0x7f0d0147;
         public static final int update_groups=0x7f0d0149;
         public static final int user_state=0x7f0d0120;
+<<<<<<< HEAD
+>>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
+=======
 >>>>>>> parent of ebd1106... 实现了几个设置方法，实现了图片的异步加载
         public static final int username=0x7f0d0057;
         public static final int vPager=0x7f0d0026;
