@@ -21,6 +21,7 @@ import android.content.Intent;
 import com.xinxin.facelinker.DemoHXSDKHelper;
 import com.xinxin.facelinker.activity.VideoCallActivity;
 import com.easemob.util.EMLog;
+import com.xinxin.facelinker.activity.VoiceCallActivity;
 
 public class CallReceiver extends BroadcastReceiver{
 

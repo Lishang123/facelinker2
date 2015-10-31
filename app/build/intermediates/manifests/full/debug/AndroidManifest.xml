@@ -86,26 +86,9 @@
             android:theme="@style/horizontal_slide"
             android:windowSoftInputMode="stateVisible" />
         <!-- 群组详情 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.GroupDetailsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
         <!-- 群组列表 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.GroupsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name="com.xinxin.facelinker.activity.ChatRoomActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan" />
         <!-- 聊天室详情 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.ChatRoomDetailsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
+
 
         <!-- 新建群组 -->
         <activity
@@ -114,16 +97,7 @@
             android:theme="@style/horizontal_slide"
             android:windowSoftInputMode="adjustPan" />
         <!-- 退出群组提示框 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.ExitGroupDialog"
-            android:screenOrientation="portrait"
-            android:theme="@style/MyDialogStyleBottom" />
         <!-- 群组选人 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.GroupPickContactsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan" />
         <!-- 地图 -->
         <activity
             android:name="com.xinxin.facelinker.activity.BaiduMapActivity"
@@ -188,15 +162,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide" />
         <!-- 群聊简单信息 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.GroupSimpleDetailActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
         <!-- 群组黑名单用户列表 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.GroupBlacklistActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.xinxin.facelinker.activity.PublicGroupsSeachActivity"
             android:screenOrientation="portrait"
