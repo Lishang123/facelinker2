@@ -33,6 +33,8 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="ANDROID.PERMISSION.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name="com.xinxin.facelinker.DemoApplication"
@@ -262,71 +264,74 @@
         <activity
             android:name="com.xinxin.facelinker.activity.SettingAccountActivity"
             android:label="@string/title_activity_setting_account"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.SettingOthersActivity"
             android:label="@string/title_activity_setting_others"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+<<<<<<< HEAD
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name="com.xinxin.facelinker.activity.AddInfoActivity"
-            android:label="@string/title_activity_add_info" >
-        </activity>
+            android:label="@string/title_activity_add_info"
+            android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.xinxin.facelinker.activity.AddMyMotionActivity"
-            android:label="@string/title_activity_add_my_motion" >
-        </activity>
+            android:label="@string/title_activity_add_my_motion"
+            android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.xinxin.facelinker.activity.GetPalInfoActivity"
-            android:label="@string/title_activity_get_pal_info" >
-        </activity>
+            android:label="@string/title_activity_get_pal_info"
+            android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.xinxin.facelinker.activity.LogonActivity"
-            android:label="@string/title_activity_logon" >
-        </activity>
+            android:label="@string/title_activity_logon"
+            android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.xinxin.facelinker.activity.ReceiveNewPalInfoActivity"
-            android:label="@string/title_activity_receive_new_pal_info" >
-        </activity>
+            android:label="@string/title_activity_receive_new_pal_info"
+            android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.xinxin.facelinker.activity.ReceiveNewPalsActivity"
-            android:label="@string/title_activity_receive_new_pals" >
-        </activity>
+            android:label="@string/title_activity_receive_new_pals"
+            android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.xinxin.facelinker.activity.SearchUserActivity"
-            android:label="@string/title_activity_search_user" >
-        </activity>
+            android:label="@string/title_activity_search_user"
+            android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.xinxin.facelinker.activity.ShowMotionActivity"
-            android:label="@string/title_activity_show_motion" >
-        </activity>
-        <activity android:name="com.xinxin.facelinker.activity.ShowBlacklistActivity" />
-        <activity android:name="com.xinxin.facelinker.activity.SettingPersonInfoActivity" />
+            android:label="@string/title_activity_show_motion"
+            android:theme="@style/horizontal_slide" />
+        <activity
+            android:name="com.xinxin.facelinker.activity.ShowBlacklistActivity"
+            android:theme="@style/horizontal_slide" />
+        <activity
+            android:name="com.xinxin.facelinker.activity.SettingPersonInfoActivity"
+            android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.xinxin.facelinker.activity.ShowMyMotionActivity"
-            android:label="@string/title_activity_show_my_motion" >
-        </activity>
+            android:label="@string/title_activity_show_my_motion"
+            android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.xinxin.facelinker.activity.ShowNearUserMotionActivity"
-            android:label="@string/title_activity_show_near_user_motion" >
-        </activity>
-        <activity
-            android:name="com.xinxin.facelinker.activity.ShowPalsActivity"
-            android:label="@string/title_activity_show_pals" >
-        </activity>
+            android:label="@string/title_activity_show_near_user_motion"
+            android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.xinxin.facelinker.activity.ShowPalsMotionActivity"
-            android:label="@string/title_activity_show_pals_motion" >
-        </activity>
+            android:label="@string/title_activity_show_pals_motion"
+            android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.xinxin.facelinker.activity.SendNewPalMessageActivity"
-            android:label="@string/title_activity_send_new_pal_message" >
-        </activity>
+            android:label="@string/title_activity_send_new_pal_message"
+            android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.xinxin.facelinker.activity.ForgetPasswordActivity"
-            android:label="@string/title_activity_forget_password" >
+            android:label="@string/title_activity_forget_password"
+            android:theme="@style/horizontal_slide" />
+=======
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
+>>>>>>> parent of 9ed2cb5... 实现了账号设置
     </application>
 
 </manifest>

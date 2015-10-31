@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.easemob.chatuidemo.R;
 import com.lidroid.xutils.HttpUtils;
@@ -69,7 +70,8 @@ public class ReceiveNewPalsActivity extends Activity {
 
             @Override
             public void onFailure(HttpException e, String s) {
-
+                pd.dismiss();
+                Toast.makeText(ReceiveNewPalsActivity.this,R.string.receive_new_pals_fail,Toast.LENGTH_SHORT).show();
             }
         });
     }

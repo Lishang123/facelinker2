@@ -46,6 +46,38 @@ public class ShowMotionActivity extends Activity {
         motion_id = getIntent().getStringExtra(Config.KEY_MOTION_ID);
         my_account_num = getIntent().getStringExtra(Config.KEY_MY_ACCOUNT_NUM);
 
+        //测试
+        //添加评论
+        btnAddComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (etAddComment.getText().toString().isEmpty() == true)
+                    return;
+
+                RequestParams params = new RequestParams();
+                //my_account_num, tvAddComment.getText().toString(), motion_id
+                params.addBodyParameter(Config.ACTION, Config.ACTION_ADD_COMMENT);
+                params.addBodyParameter(Config.KEY_COMMENT, etAddComment.getText().toString());
+                params.addBodyParameter(Config.KEY_MOTION_ID, motion_id);
+
+                httpUtils.send(HttpRequest.HttpMethod.POST, Config.CATEGORIES_URL, params, new RequestCallBack<String>() {
+                    @Override
+                    public void onSuccess(ResponseInfo<String> responseInfo) {
+                        tvAddComment.setText(tvAddComment.getText() + etAddComment.getText().toString() + '\n');
+                        etAddComment.setText("");
+                        Toast.makeText(ShowMotionActivity.this, R.string.add_comment_success, Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onFailure(HttpException e, String s) {
+                        Toast.makeText(ShowMotionActivity.this, R.string.add_comment_fail, Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+
+
         final ProgressDialog pd = ProgressDialog.show(ShowMotionActivity.this, getResources().getString(R.string.show_motion_connecting), getResources().getString(R.string.show_motion_connecting_to_server));
         RequestParams params = new RequestParams();
         params.addBodyParameter(Config.ACTION, Config.ACTION_SHOW_MOTION);

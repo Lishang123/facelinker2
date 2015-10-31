@@ -64,6 +64,60 @@ public class GetPalInfoActivity extends Activity {
         my_account_num = Config.getCachedAccountNum(GetPalInfoActivity.this);
         other_account_num = getIntent().getStringExtra(Config.KEY_OTHER_ACCOUNT_NUM);
 
+        //测试
+        //添加好友按钮
+        btnAddPal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+//                            final EditText input = new EditText(GetPalInfoActivity.this);    //定义一个EditText
+//
+//                            final AlertDialog.Builder builder = new AlertDialog.Builder(GetPalInfoActivity.this);
+//                            builder.setTitle("你要说的话");
+//                            // builder.setIcon(android.R.drawable.ic_menu_info_details);
+//                            builder.setView(input);
+
+                RequestParams params = new RequestParams();
+                params.addBodyParameter(Config.ACTION, Config.ACTION_ACCEPT_ADD_NEW_PAL);
+                params.addBodyParameter(Config.KEY_MY_ACCOUNT_NUM, my_account_num);
+                params.addBodyParameter(Config.KEY_OTHER_ACCOUNT_NUM, other_account_num);
+                httpUtils.send(HttpRequest.HttpMethod.POST, Config.CATEGORIES_URL, params, new RequestCallBack<String>() {
+                    @Override
+                    public void onSuccess(ResponseInfo<String> responseInfo) {
+                        Toast.makeText(GetPalInfoActivity.this, R.string.add_new_pal_success, Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onFailure(HttpException e, String s) {
+                        Toast.makeText(GetPalInfoActivity.this, R.string.add_new_pal_fail, Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+
+        //测试
+        //加入黑名单
+        btnAddBlackList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RequestParams params = new RequestParams();
+                params.addBodyParameter(Config.ACTION, Config.ACTION_ADD_BLACKLIST);
+                params.addBodyParameter(Config.KEY_MY_ACCOUNT_NUM, my_account_num);
+                params.addBodyParameter(Config.KEY_OTHER_ACCOUNT_NUM, other_account_num);
+                httpUtils.send(HttpRequest.HttpMethod.POST, Config.CATEGORIES_URL, params, new RequestCallBack<String>() {
+                    @Override
+                    public void onSuccess(ResponseInfo<String> responseInfo) {
+                        Toast.makeText(GetPalInfoActivity.this, R.string.add_blacklist_success, Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onFailure(HttpException e, String s) {
+                        Toast.makeText(GetPalInfoActivity.this, R.string.add_blacklist_fail, Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+
         final ProgressDialog pd = ProgressDialog.show(GetPalInfoActivity.this, getResources().getString(R.string.get_contacts_connecting), getResources().getString(R.string.get_pal_info_connecting_to_server));
         //new GetPalInfoNet(my_account_num,other_account_num ,new GetPalInfoNet.SuccessCallback() {
         RequestParams params = new RequestParams();

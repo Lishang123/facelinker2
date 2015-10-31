@@ -33,7 +33,7 @@ public class ForgetPasswordActivity extends Activity {
     private EditText etCode;
     private Button btnGetCode;
     private Button btnOk;
-    private HttpUtils httpUtils=new HttpUtils();
+    private HttpUtils httpUtils = new HttpUtils();
     private GetLogonVerificationCode getLogonVerificationCode;
     private EditText etNewPassword;
 
@@ -42,11 +42,11 @@ public class ForgetPasswordActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forget_password);
 
-        etPhone_num= (EditText) findViewById(R.id.etPhone_num);
-        etCode= (EditText) findViewById(R.id.etCode);
-        btnGetCode= (Button) findViewById(R.id.btnGetCode);
-        btnOk= (Button) findViewById(R.id.btnOk);
-        etNewPassword= (EditText) findViewById(R.id.etNewPassword);
+        etPhone_num = (EditText) findViewById(R.id.etPhone_num);
+        etCode = (EditText) findViewById(R.id.etCode);
+        btnGetCode = (Button) findViewById(R.id.btnGetCode);
+        btnOk = (Button) findViewById(R.id.btnOk);
+        etNewPassword = (EditText) findViewById(R.id.etNewPassword);
 
         btnOk.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,13 +62,18 @@ public class ForgetPasswordActivity extends Activity {
                     return;
                 }
 
-                if(etNewPassword.getText().toString().isEmpty()==true){
+                if (etNewPassword.getText().toString().isEmpty() == true) {
                     Toast.makeText(ForgetPasswordActivity.this, R.string.password_wrong, Toast.LENGTH_SHORT).show();
                     return;
                 }
 
-                if(!getLogonVerificationCode.getCode().equals(etCode.getText().toString())){
-                    Toast.makeText(ForgetPasswordActivity.this, R.string.verification_code_wrong, Toast.LENGTH_SHORT).show();
+                try {
+                    if (!getLogonVerificationCode.getCode().equals(etCode.getText().toString())) {
+                        Toast.makeText(ForgetPasswordActivity.this, R.string.verification_code_wrong, Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                } catch (Exception e) {
+                    Toast.makeText(ForgetPasswordActivity.this, "验证失败", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -100,7 +105,7 @@ public class ForgetPasswordActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                if (etPhone_num.getText().toString().isEmpty()==true) {
+                if (etPhone_num.getText().toString().length() != 11) {
                     Toast.makeText(ForgetPasswordActivity.this, R.string.phone_num_wrong, Toast.LENGTH_SHORT).show();
                     return;
                 }
@@ -109,7 +114,7 @@ public class ForgetPasswordActivity extends Activity {
                 params.addBodyParameter(Config.ACTION, Config.ACTION_GET_LOGON_VERIFICATION_CODE);
                 params.addBodyParameter(Config.KEY_PHONE_NUM, etPhone_num.getText().toString());
                 httpUtils.send(HttpRequest.HttpMethod.POST, Config.CATEGORIES_URL, params, new RequestCallBack<String>() {
-                    @Override
+
                     public void onSuccess(ResponseInfo<String> responseInfo) {
                         getLogonVerificationCode = (GetLogonVerificationCode) NetHelper.parseJsonData(responseInfo.result, GetLogonVerificationCode.class);
                         Toast.makeText(ForgetPasswordActivity.this, "获取验证码成功", Toast.LENGTH_SHORT).show();

@@ -52,6 +52,52 @@ public class ReceiveNewPalInfoActivity extends Activity {
         btnAccept= (Button) findViewById(R.id.btnAccept);
         btnRefuse= (Button) findViewById(R.id.btnRefuse);
 
+        //测试
+        //接受按钮
+        btnAccept.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RequestParams params = new RequestParams();
+                params.addBodyParameter(Config.ACTION, Config.ACTION_ACCEPT_ADD_NEW_PAL);
+                params.addBodyParameter(Config.KEY_MY_ACCOUNT_NUM, my_account_num);
+                params.addBodyParameter(Config.KEY_OTHER_ACCOUNT_NUM, other_account_num);
+                httpUtils.send(HttpRequest.HttpMethod.POST, Config.CATEGORIES_URL, params, new RequestCallBack<String>() {
+                    @Override
+                    public void onSuccess(ResponseInfo<String> responseInfo) {
+                        Toast.makeText(ReceiveNewPalInfoActivity.this, R.string.answer_new_pal_success,Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onFailure(HttpException e, String s) {
+                        Toast.makeText(ReceiveNewPalInfoActivity.this, R.string.answer_new_pal_fail,Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+
+        //测试
+        //拒绝按钮
+        btnRefuse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RequestParams params = new RequestParams();
+                params.addBodyParameter(Config.ACTION, Config.ACTION_REFUSE_ADD_NEW_PAL);
+                params.addBodyParameter(Config.KEY_MY_ACCOUNT_NUM, my_account_num);
+                params.addBodyParameter(Config.KEY_OTHER_ACCOUNT_NUM, other_account_num);
+                httpUtils.send(HttpRequest.HttpMethod.POST, Config.CATEGORIES_URL, params, new RequestCallBack<String>() {
+                    @Override
+                    public void onSuccess(ResponseInfo<String> responseInfo) {
+                        Toast.makeText(ReceiveNewPalInfoActivity.this, R.string.answer_new_pal_success,Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onFailure(HttpException e, String s) {
+                        Toast.makeText(ReceiveNewPalInfoActivity.this, R.string.answer_new_pal_fail,Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+
         RequestParams params = new RequestParams();
         params.addBodyParameter(Config.ACTION, Config.ACTION_RECEIVE_NEW_PAL_INFO);
         params.addBodyParameter(Config.KEY_MY_ACCOUNT_NUM, my_account_num);

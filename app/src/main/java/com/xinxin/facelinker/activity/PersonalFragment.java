@@ -161,13 +161,17 @@ public class PersonalFragment extends Fragment implements OnClickListener {
                 ChangePersonInfo();
                 break;
             case R.id.rv_pals:
+<<<<<<< HEAD
                 startActivity(new Intent(getActivity(), ShowPalsFragment.class));
+=======
+                //                startActivity(new Intent(getActivity(),));
+>>>>>>> parent of 9ed2cb5... 实现了账号设置
                 break;
             case R.id.rl_groups:
-                startActivity(new Intent(getActivity(), GroupsActivity.class));
+                //                startActivity(new Intent(getActivity(),));
                 break;
             case R.id.rl_blacklist:
-                startActivity(new Intent(getActivity(), ShowBlacklistActivity.class));
+//                startActivity(new Intent(getActivity(),));
                 break;
             case R.id.ll_chatsettings:
                 startActivity(new Intent(getActivity(), SettingChatActivity.class));
