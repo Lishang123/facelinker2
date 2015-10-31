@@ -161,11 +161,11 @@ public class PersonalFragment extends Fragment implements OnClickListener {
                 ChangePersonInfo();
                 break;
             case R.id.rv_pals:
-<<<<<<< HEAD
-                startActivity(new Intent(getActivity(), ShowPalsFragment.class));
-=======
+
+                startActivity(new Intent(getActivity(), com.xinxin.facelinker.activity.ShowPalsFragment.class));
+
                 //                startActivity(new Intent(getActivity(),));
->>>>>>> parent of 9ed2cb5... 实现了账号设置
+
                 break;
             case R.id.rl_groups:
                 //                startActivity(new Intent(getActivity(),));
@@ -174,10 +174,10 @@ public class PersonalFragment extends Fragment implements OnClickListener {
 //                startActivity(new Intent(getActivity(),));
                 break;
             case R.id.ll_chatsettings:
-                startActivity(new Intent(getActivity(), SettingChatActivity.class));
+                startActivity(new Intent(getActivity(), com.xinxin.facelinker.activity.SettingChatActivity.class));
                 break;
             case R.id.ll_accountsettings:
-                startActivity(new Intent(getActivity(), SettingAccountActivity.class));
+                startActivity(new Intent(getActivity(), com.xinxin.facelinker.activity.SettingAccountActivity.class));
                 break;
 //            case R.id.ll_othersettings:
 //                startActivity(new Intent(getActivity(), SettingOthersActivity.class));
@@ -186,10 +186,10 @@ public class PersonalFragment extends Fragment implements OnClickListener {
                 rating(getActivity().getApplicationContext());
                 break;
             case R.id.ll_feedback:
-                startActivity(new Intent(getActivity(), FeedbackActivity.class));
+                startActivity(new Intent(getActivity(), com.xinxin.facelinker.activity.FeedbackActivity.class));
                 break;
             case R.id.ll_about:
-                startActivity(new Intent(getActivity(), AboutFaceLinkerActivity.class));
+                startActivity(new Intent(getActivity(), com.xinxin.facelinker.activity.AboutFaceLinkerActivity.class));
                 break;
             case R.id.bt_personal_exit:
                 logout();
@@ -199,19 +199,19 @@ public class PersonalFragment extends Fragment implements OnClickListener {
     }
 
     private void ChangePersonInfo() {
-        startActivity(new Intent(getActivity(), SettingPersonInfoActivity.class));
+        startActivity(new Intent(getActivity(), com.xinxin.facelinker.activity.SettingPersonInfoActivity.class));
     }
 
     private void changeAvater() {
-        startActivity(new Intent(getActivity(), SettingPersonInfoActivity.class));
+        startActivity(new Intent(getActivity(), com.xinxin.facelinker.activity.SettingPersonInfoActivity.class));
     }
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        if (((MainActivity) getActivity()).isConflict) {
+        if (((com.xinxin.facelinker.activity.MainActivity) getActivity()).isConflict) {
             outState.putBoolean("isConflict", true);
-        } else if (((MainActivity) getActivity()).getCurrentAccountRemoved()) {
+        } else if (((com.xinxin.facelinker.activity.MainActivity) getActivity()).getCurrentAccountRemoved()) {
             outState.putBoolean(Constant.ACCOUNT_REMOVED, true);
         }
     }
@@ -251,7 +251,7 @@ public class PersonalFragment extends Fragment implements OnClickListener {
                     public void run() {
                         pd.dismiss();
                         // 重新显示登陆页面
-                        ((MainActivity) getActivity()).finish();
+                        ((com.xinxin.facelinker.activity.MainActivity) getActivity()).finish();
                         startActivity(new Intent(getActivity(), LoginActivity.class));
 
                     }

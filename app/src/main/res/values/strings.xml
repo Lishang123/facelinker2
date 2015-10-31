@@ -449,4 +449,10 @@
     <string name="gallery">图库</string>
     <string name="select_uploda_picture_method">上传头像方式</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="show_male_toplist_fail">男神榜显示失败</string>
+    <string name="show_male_toplist_connecting">男神榜连接中</string>
+    <string name="show_male_toplist_connecting_to_server">男神榜服务器连接中</string>
+    <string name="show_female_toplist_fail">女神榜显示失败</string>
+    <string name="show_female_toplist_connecting">女神榜连接中</string>
+    <string name="show_female_toplist_connecting_to_server">女神榜服务器连接中</string>
 </resources>

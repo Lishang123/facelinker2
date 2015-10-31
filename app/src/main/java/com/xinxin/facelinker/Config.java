@@ -37,20 +37,16 @@ public class Config {
     public static final String ACTION_SHOW_NEAR_USER_MOTION = "show_near_user_motion";
     public static final String ACTION_RECEIVE_NEW_PALS = "receive_new_pals";
     public static final String ACTION_RECEIVE_NEW_PAL_INFO = "receive_new_pal_info";
-<<<<<<< HEAD
+
+
+    public static final String ACTION_SHOW_MALE_TOPLIST = "show_male_toplist";
+    public static final String ACTION_SHOW_FEMALE_TOPLIST = "show_female_toplist";
+
     public static final String ACTION_ACCEPT_ADD_NEW_PAL = "accept_add_new_pal";
     public static final String ACTION_REFUSE_ADD_NEW_PAL = "refuse_add_new_pal";
     public static final String ACTION_SEND_NEW_PAL_MESSAGE = "send_new_pal_message";
     public static final String ACTION_GET_LOGON_VERIFICATION_CODE = "get_logon_verification_code";
-    public static final String ACTION_SHOW_MALE_TOPLIST = "show_male_toplist";
-    public static final String ACTION_SHOW_FEMALE_TOPLIST = "show_female_toplist";
 
-=======
-    public static final String ACTION_ACCEPT_ADD_NEW_PAL= "accept_add_new_pal";
-    public static final String ACTION_REFUSE_ADD_NEW_PAL= "refuse_add_new_pal";
-    public static final String ACTION_SEND_NEW_PAL_MESSAGE= "send_new_pal_message";
-    public static final String ACTION_GET_LOGON_VERIFICATION_CODE= "get_logon_verification_code";
->>>>>>> parent of 9ed2cb5... 实现了账号设置
 
     public static final String APP_ID = "com.xinxin.facelinker";
     public static final String KEY_TOKEN = "token";
@@ -84,7 +80,7 @@ public class Config {
     public static final String KEY_RECEIVE_NEW_PAL_MESSAGE = "receive_new_pal_message";
     public static final String KEY_RECEIVE_NEW_PALS = "receive_new_pals";
     public static final String KEY_SEND_NEW_PAL_MESSAGE = "send_new_pal_message";
-    public static final String KEY_JOB= "job";
+    public static final String KEY_JOB = "job";
 
     public static final int RESULT_STATUS_SUCCESS = 1;
     public static final int RESULT_STATUS_FAIL = 0;

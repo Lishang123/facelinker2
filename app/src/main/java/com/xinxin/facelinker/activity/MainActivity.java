@@ -522,7 +522,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
             }
             localUsers.putAll(toAddUsers);
             // 刷新ui
-            if (currentTabIndex == 1)
+           // if (currentTabIndex == 1)
                 //contactListFragment.refresh();
 
         }
@@ -834,8 +834,8 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         // 刷新bottom bar消息未读数
         updateUnreadAddressLable();
         // 刷新好友页面ui
-        if (currentTabIndex == 1)
-            contactListFragment.refresh();
+//        if (currentTabIndex == 1)
+//            contactListFragment.refresh();
     }
 
     /**

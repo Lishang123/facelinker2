@@ -55,10 +55,10 @@ public class SettingAccountActivity extends Activity {
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext());
                 builder.setTitle("重新设置密码");
-                EditText editText1 = new EditText(getApplicationContext());
+                final EditText editText1 = new EditText(getApplicationContext());
                 editText1.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
                 editText1.setHint("请输入新密码");
-                EditText editText2 = new EditText(getApplicationContext());
+                final EditText editText2 = new EditText(getApplicationContext());
                 editText2.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD);
                 editText1.setHint("请再次输入新密码");
                 LinearLayout linearLayout = new LinearLayout(getApplicationContext());

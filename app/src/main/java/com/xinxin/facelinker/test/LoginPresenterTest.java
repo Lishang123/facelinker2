@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.test.ActivityUnitTestCase;
 import android.test.suitebuilder.annotation.MediumTest;
 
+import com.xinxin.facelinker.activity.LoginActivity;
+
 /**
  * Created by xinxin on 2015/7/21.
  */

@@ -490,6 +490,12 @@
     <string name="set_new_password_fail">设置新密码失败</string>
     <string name="setting">Settings</string>
     <string name="shake">Shake</string>
+    <string name="show_female_toplist_connecting">女神榜连接中</string>
+    <string name="show_female_toplist_connecting_to_server">女神榜服务器连接中</string>
+    <string name="show_female_toplist_fail">女神榜显示失败</string>
+    <string name="show_male_toplist_connecting">男神榜连接中</string>
+    <string name="show_male_toplist_connecting_to_server">男神榜服务器连接中</string>
+    <string name="show_male_toplist_fail">男神榜显示失败</string>
     <string name="show_motion_connecting">加载中</string>
     <string name="show_motion_connecting_to_server">正在获取动态，请稍后</string>
     <string name="show_motion_fail">获取动态失败</string>

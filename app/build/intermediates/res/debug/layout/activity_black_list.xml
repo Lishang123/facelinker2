@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#f2f0eb" >
+    android:background="@color/common_bg" >
 
     <RelativeLayout
         android:id="@+id/top_bar"
@@ -61,7 +61,7 @@
     </RelativeLayout>
 
     <ListView
-        android:id="@+id/list"
+        android:id="@+id/lvBlacklist"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/transparent"
