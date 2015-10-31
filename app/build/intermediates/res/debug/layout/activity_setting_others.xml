@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical"
+>
+<include
+    android:id="@+id/title"
+    layout="@layout/common_top_title_one"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_clear_recent_chat_list"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:paddingTop="8.0dip">
+
+                <TextView
+                    android:id="@+id/tv_clear_recent_chat_list"
+                    style="@style/biao_info_item_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="清空最近聊天列表"
+                    android:textSize="16.0sp" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_clear_chat_log"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="16.0dip"
+                android:paddingRight="16.0dip"
+                android:paddingTop="8.0dip">
+
+                <TextView
+                    android:id="@+id/tv_clear_chat_log"
+                    style="@style/biao_info_item_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="清除所有聊天记录"
+                    android:textSize="16.0sp" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/myinfo_item_line" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+<!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/layout/activity_setting_others.xml -->

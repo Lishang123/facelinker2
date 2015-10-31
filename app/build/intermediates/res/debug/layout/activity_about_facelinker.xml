@@ -148,4 +148,4 @@
         android:layout_height="wrap_content"
         android:background="@drawable/itemline"
         android:contentDescription="@string/app_name" />
-</LinearLayout><!-- From: file:/D:/android_project/FaceLinker/app/src/main/res/layout/activity_about_facelinker.xml -->
+</LinearLayout><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/layout/activity_about_facelinker.xml -->

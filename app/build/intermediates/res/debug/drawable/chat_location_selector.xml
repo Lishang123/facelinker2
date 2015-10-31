@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/chat_location_pressed" android:state_enabled="false"/>
     <item android:drawable="@drawable/chat_location_normal"/>
 
-</selector><!-- From: file:/D:/android_project/FaceLinker/app/src/main/res/drawable/chat_location_selector.xml -->
+</selector><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/drawable/chat_location_selector.xml -->

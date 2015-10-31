@@ -44,18 +44,19 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan" />
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <!-- 开屏页 -->
         <activity
             android:name="com.xinxin.facelinker.activity.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <!-- 登陆 -->
@@ -179,11 +180,6 @@
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 语音通话 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.VoiceCallActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:theme="@style/nornal_style" />
         <!-- 视频通话 -->
         <activity
             android:name="com.xinxin.facelinker.activity.VideoCallActivity"

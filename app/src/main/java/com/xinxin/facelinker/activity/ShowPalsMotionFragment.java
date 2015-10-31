@@ -1,5 +1,11 @@
 package com.xinxin.facelinker.activity;
 
+/*
+ * User: 林/xinxin
+ * Date:
+ * Describe:4个主要界面的显示朋友圈动态
+ *
+ */
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -31,9 +37,7 @@ import com.xinxin.facelinker.domain.ShowPalsMotion;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * A placeholder fragment containing a simple view.
- */
+
 public class ShowPalsMotionFragment extends Fragment {
 
     private String my_account_num;

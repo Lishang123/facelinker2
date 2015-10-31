@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/conversation_selected" android:state_selected="true"/>
     <item android:drawable="@drawable/conversation_normal"/>
 
-</selector><!-- From: file:/D:/android_project/FaceLinker/app/src/main/res/drawable/tab_chat_bg.xml -->
+</selector><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/drawable/tab_chat_bg.xml -->

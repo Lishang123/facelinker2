@@ -3,4 +3,4 @@
     android:shape="rectangle">
     <solid android:color="@color/light_white"/>
     <corners android:radius="7dp"/>
-</shape><!-- From: file:/D:/android_project/FaceLinker/app/src/main/res/drawable/help_submit.xml -->
+</shape><!-- From: file:/E:/AndroidStudioProjects/FaceLinker/app/src/main/res/drawable/help_submit.xml -->

@@ -27,7 +27,6 @@ import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.xinxin.facelinker.Config;
 import com.xinxin.facelinker.DemoHXSDKHelper;
-import com.xinxin.facelinker.domain.ReceiveNewPalInfo;
 import com.xinxin.facelinker.domain.Version;
 import com.xinxin.facelinker.utils.CommonUtils;
 
@@ -65,6 +64,7 @@ public class SplashActivity extends BaseActivity {
         versionText.setText(CommonUtils.getVersionName(this));
 
         m_progressDlg = new ProgressDialog(this);
+        startActivity(new Intent(SplashActivity.this, MainActivity.class));
         m_progressDlg.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
         // 设置ProgressDialog 的进度条是否不明确 false 就是不设置为不明确
         m_progressDlg.setIndeterminate(false);
@@ -167,7 +167,8 @@ public class SplashActivity extends BaseActivity {
                             Thread.sleep(sleepTime);
                         } catch (InterruptedException e) {
                         }
-                        startActivity(new Intent(SplashActivity.this,AddInfoActivity.class));
+                        enterMain();
+//                        startActivity(new Intent(SplashActivity.this,AddInfoActivity.class));
                         finish();
                     }
                 }

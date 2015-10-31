@@ -1,3 +1,11 @@
+
+/*
+ * User: xinxin
+ * Date:
+ * Describe:facelinker关于activity，
+ *
+ */
+
 package com.xinxin.facelinker.activity;
 
 import android.app.Activity;
@@ -25,7 +33,6 @@ import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
 import com.xinxin.facelinker.Config;
-import com.xinxin.facelinker.activity.util.SystemUiHider;
 import com.xinxin.facelinker.domain.CreatorInfo;
 import com.xinxin.facelinker.domain.UserProvision;
 import com.xinxin.facelinker.domain.Version;
@@ -36,13 +43,6 @@ import java.io.File;
 
 import static com.xinxin.facelinker.utils.NetHelper.parseJsonData;
 
-
-/**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
- *
- * @see SystemUiHider
- */
 public class AboutFaceLinkerActivity extends Activity {
     LinearLayout ll_version_update;
     LinearLayout ll_version_info;
@@ -57,6 +57,7 @@ public class AboutFaceLinkerActivity extends Activity {
     String m_newVerName; //最新版的版本名
     String url = null;//下载的地址
     String m_appNameStr = "newversion"; //下载到本地要给这个APP命的名字
+
 
 
     @Override
@@ -80,7 +81,6 @@ public class AboutFaceLinkerActivity extends Activity {
                 finish();
             }
         });
-
     }
 
     public void onClick(View view) {
@@ -104,6 +104,9 @@ public class AboutFaceLinkerActivity extends Activity {
 
     }
 
+    /**
+     * 检查更新
+     */
     private void checkUpdate() {
         RequestParams params = new RequestParams();
         params.addBodyParameter(Config.ACTION, "check_update2");

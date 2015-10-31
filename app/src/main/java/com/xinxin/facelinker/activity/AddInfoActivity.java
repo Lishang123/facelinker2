@@ -1,6 +1,5 @@
 package com.xinxin.facelinker.activity;
 
-import android.animation.AnimatorSet;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -28,18 +27,15 @@ import com.lidroid.xutils.http.RequestParams;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
-import com.nostra13.universalimageloader.core.ImageLoader;
 import com.xinxin.facelinker.Config;
 import com.xinxin.facelinker.domain.FLUser;
 
-import org.jivesoftware.smackx.packet.StreamInitiation;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URI;
 
 public class AddInfoActivity extends Activity {
 
@@ -53,12 +49,12 @@ public class AddInfoActivity extends Activity {
     private String phone_num;
     private EditText etJob;
     HttpUtils httpUtils = new HttpUtils();
-    final int LIST_DIALOG=1;
+    final int LIST_DIALOG = 1;
     private static int CAMERA_REQUEST_CODE = 1;
     private static int GALLERY_REQUEST_CODE = 2;
     private static int CROP_REQUEST_CODE = 3;
-    private String[] array=new String[]{"摄像头", "图库"};
-    private int selectNum=0;
+    private String[] array = new String[]{"摄像头", "图库"};
+    private int selectNum = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,8 +104,8 @@ public class AddInfoActivity extends Activity {
 
                         try {
                             //创建数据库，保存用户数据
-                            DbUtils db= DbUtils.create(AddInfoActivity.this);
-                            FLUser flUser=new FLUser();
+                            DbUtils db = DbUtils.create(AddInfoActivity.this);
+                            FLUser flUser = new FLUser();
                             flUser.setEmail(etEmail.getText().toString());
                             flUser.setGender(etGender.getText().toString());
                             flUser.setJob(etJob.getText().toString());
@@ -135,11 +131,11 @@ public class AddInfoActivity extends Activity {
     }
 
     //转变uri为file类型
-    private Uri convertUri(Uri uri){
-        InputStream is=null;
+    private Uri convertUri(Uri uri) {
+        InputStream is = null;
         try {
-            is=getContentResolver().openInputStream(uri);
-            Bitmap bitmap= BitmapFactory.decodeStream(is);
+            is = getContentResolver().openInputStream(uri);
+            Bitmap bitmap = BitmapFactory.decodeStream(is);
             is.close();
             System.out.println("convertUri");
             return saveBitmap(bitmap);
@@ -152,14 +148,14 @@ public class AddInfoActivity extends Activity {
     }
 
     //将Bitmap转变为file类型Uri
-    private Uri saveBitmap(Bitmap bitmap){
-        File tmpDir=new File(Environment.getExternalStorageDirectory()+"/com.xinxin.faceliner");
-        if(!tmpDir.exists()) {
+    private Uri saveBitmap(Bitmap bitmap) {
+        File tmpDir = new File(Environment.getExternalStorageDirectory() + "/com.xinxin.faceliner");
+        if (!tmpDir.exists()) {
             tmpDir.mkdir();
         }
-        File img=new File(tmpDir.getAbsolutePath()+"userpicture.png");
+        File img = new File(tmpDir.getAbsolutePath() + "userpicture.png");
         try {
-            FileOutputStream fos=new FileOutputStream(img);
+            FileOutputStream fos = new FileOutputStream(img);
             bitmap.compress(Bitmap.CompressFormat.PNG, 85, fos);
             fos.flush();
             fos.close();
@@ -174,8 +170,8 @@ public class AddInfoActivity extends Activity {
     }
 
     //对图像进行裁剪
-    private void startImageZoom(Uri uri){
-        Intent intent=new Intent("com.android.camera.action.CROP");
+    private void startImageZoom(Uri uri) {
+        Intent intent = new Intent("com.android.camera.action.CROP");
         intent.setDataAndType(uri, "image/*");
         intent.putExtra("crop", "true");
         intent.putExtra("aspectX", 1);
@@ -183,7 +179,7 @@ public class AddInfoActivity extends Activity {
         intent.putExtra("outputX", 150);
         intent.putExtra("outputY", 150);
         intent.putExtra("return-data", true);
-        startActivityForResult(intent,CROP_REQUEST_CODE);
+        startActivityForResult(intent, CROP_REQUEST_CODE);
     }
 
 
@@ -195,15 +191,15 @@ public class AddInfoActivity extends Activity {
                 Bundle extras = data.getExtras();
                 if (extras != null) {
                     Bitmap bm = extras.getParcelable("data");
-                    Uri uri=saveBitmap(bm);
+                    Uri uri = saveBitmap(bm);
 
                     //向数据库中保存图片地址
                     startImageZoom(uri);
                 }
             }
-        }else if(requestCode==GALLERY_REQUEST_CODE){
+        } else if (requestCode == GALLERY_REQUEST_CODE) {
 
-            if(data==null)
+            if (data == null)
                 return;
             else {
                 Uri uri;
@@ -214,18 +210,18 @@ public class AddInfoActivity extends Activity {
                 startImageZoom(fileUri);
             }
 
-        }else if(requestCode==CROP_REQUEST_CODE){
-            if(data==null)
+        } else if (requestCode == CROP_REQUEST_CODE) {
+            if (data == null)
                 return;
-            Bundle extras=data.getExtras();
-            Bitmap bm=extras.getParcelable("data");
+            Bundle extras = data.getExtras();
+            Bitmap bm = extras.getParcelable("data");
             ivPhoto.setImageBitmap(bm);
         }
     }
 
     @Override
     protected Dialog onCreateDialog(int id) {
-        Dialog dialog=null;
+        Dialog dialog = null;
         switch (id) {
             case LIST_DIALOG:
                 AlertDialog.Builder b = new AlertDialog.Builder(this);
@@ -233,17 +229,17 @@ public class AddInfoActivity extends Activity {
                 b.setSingleChoiceItems(array, 0, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        selectNum=i;
+                        selectNum = i;
                     }
                 });
                 b.setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         if (array[selectNum].equals("摄像头")) {
-                            Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                            startActivityForResult(intent,CAMERA_REQUEST_CODE);
+                            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                            startActivityForResult(intent, CAMERA_REQUEST_CODE);
                         } else {
-                            Intent intent=new Intent(Intent.ACTION_GET_CONTENT);
+                            Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
                             intent.setType("image/*");
                             startActivityForResult(intent, GALLERY_REQUEST_CODE);
                         }

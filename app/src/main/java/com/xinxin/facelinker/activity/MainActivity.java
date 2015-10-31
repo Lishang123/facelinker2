@@ -81,7 +81,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
 
     private Button[] mTabs;
     private ContactlistFragment contactListFragment;
-    // private ChatHistoryFragment chatHistoryFragment;
+    private ShowPalsFragment showPalsFragment;
     private ChatAllHistoryFragment chatHistoryFragment;
     private ShowPalsMotionFragment showPalsMotionFragment;
 
@@ -140,15 +140,16 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         inviteMessgeDao = new InviteMessgeDao(this);
         userDao = new UserDao(this);
         // 这个fragment只显示好友和群组的聊天记录
-        // chatHistoryFragment = new ChatHistoryFragment();
         // 显示所有人消息记录的fragment
         chatHistoryFragment = new ChatAllHistoryFragment();
+        showPalsFragment = new ShowPalsFragment();
         contactListFragment = new ContactlistFragment();
+        showPalsMotionFragment = new ShowPalsMotionFragment();
         personalFragment = new PersonalFragment();
-        fragments = new Fragment[]{chatHistoryFragment, contactListFragment, showPalsMotionFragment, personalFragment};
+        fragments = new Fragment[]{chatHistoryFragment, showPalsFragment, showPalsMotionFragment, personalFragment};
         // 添加显示第一个fragment
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, chatHistoryFragment)
-                .add(R.id.fragment_container, contactListFragment).hide(contactListFragment).show(chatHistoryFragment)
+                .add(R.id.fragment_container, showPalsFragment).hide(showPalsFragment).show(chatHistoryFragment)
                 .commit();
 
         init();

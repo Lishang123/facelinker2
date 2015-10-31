@@ -43,18 +43,19 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan" />
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <!-- 开屏页 -->
         <activity
             android:name="com.xinxin.facelinker.activity.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <!-- 登陆 -->
@@ -84,26 +85,8 @@
             android:theme="@style/horizontal_slide"
             android:windowSoftInputMode="stateVisible" />
         <!-- 群组详情 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.GroupDetailsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
         <!-- 群组列表 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.GroupsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name="com.xinxin.facelinker.activity.ChatRoomActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan" />
         <!-- 聊天室详情 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.ChatRoomDetailsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
 
         <!-- 新建群组 -->
         <activity
@@ -112,16 +95,7 @@
             android:theme="@style/horizontal_slide"
             android:windowSoftInputMode="adjustPan" />
         <!-- 退出群组提示框 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.ExitGroupDialog"
-            android:screenOrientation="portrait"
-            android:theme="@style/MyDialogStyleBottom" />
         <!-- 群组选人 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.GroupPickContactsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan" />
         <!-- 地图 -->
         <activity
             android:name="com.xinxin.facelinker.activity.BaiduMapActivity"
@@ -178,11 +152,6 @@
             android:windowSoftInputMode="adjustPan" />
 
         <!-- 语音通话 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.VoiceCallActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:theme="@style/nornal_style" />
         <!-- 视频通话 -->
         <activity
             android:name="com.xinxin.facelinker.activity.VideoCallActivity"
@@ -191,15 +160,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide" />
         <!-- 群聊简单信息 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.GroupSimpleDetailActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
         <!-- 群组黑名单用户列表 -->
-        <activity
-            android:name="com.xinxin.facelinker.activity.GroupBlacklistActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.xinxin.facelinker.activity.PublicGroupsSeachActivity"
             android:screenOrientation="portrait"
@@ -299,12 +260,12 @@
         <activity
             android:name="com.xinxin.facelinker.activity.SettingAccountActivity"
             android:label="@string/title_activity_setting_account"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
             android:name="com.xinxin.facelinker.activity.SettingOthersActivity"
             android:label="@string/title_activity_setting_others"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
             android:name="com.xinxin.facelinker.activity.AddInfoActivity"
@@ -338,8 +299,8 @@
             android:name="com.xinxin.facelinker.activity.ShowMotionActivity"
             android:label="@string/title_activity_show_motion" >
         </activity>
-        <activity android:name="com.xinxin.facelinker.activity.ShowBlacklistActivity"/>
-        <activity android:name="com.xinxin.facelinker.activity.SettingPersonInfoActivity"/>
+        <activity android:name="com.xinxin.facelinker.activity.ShowBlacklistActivity" />
+        <activity android:name="com.xinxin.facelinker.activity.SettingPersonInfoActivity" />
         <activity
             android:name="com.xinxin.facelinker.activity.ShowMyMotionActivity"
             android:label="@string/title_activity_show_my_motion" >

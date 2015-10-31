@@ -46,7 +46,6 @@ import com.easemob.chatuidemo.R;
 import com.xinxin.facelinker.activity.ChatActivity;
 import com.xinxin.facelinker.activity.MainActivity;
 import com.xinxin.facelinker.activity.VideoCallActivity;
-import com.xinxin.facelinker.activity.VoiceCallActivity;
 import com.xinxin.facelinker.domain.RobotUser;
 import com.xinxin.facelinker.domain.User;
 import com.xinxin.facelinker.receiver.CallReceiver;
