@@ -1,3 +1,10 @@
+/*
+ * User: xinxin
+ * Date:
+ * Describe:忘记密码
+ *
+ */
+
 package com.xinxin.facelinker.activity;
 
 import android.app.Activity;

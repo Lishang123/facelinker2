@@ -1,3 +1,10 @@
+/*
+ * User: xinxin
+ * Date:
+ * Describe:在chatactivity中使用到的，用于加载宫格图片
+ *
+ */
+
 package com.xinxin.facelinker.activity;
 
 import android.content.Intent;

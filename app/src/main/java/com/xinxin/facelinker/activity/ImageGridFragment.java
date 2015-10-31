@@ -1,3 +1,10 @@
+/*
+ * User: xinxin
+ * Date:
+ * Describe:为同名activity提供fragment
+ *
+ */
+
 package com.xinxin.facelinker.activity;
 
 import java.util.ArrayList;

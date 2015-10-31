@@ -1,3 +1,10 @@
+/*
+ * User: xinxin
+ * Date:
+ * Describe:聊天文件相关
+ *
+ */
+
 package com.xinxin.facelinker.activity;
 
 import java.io.File;

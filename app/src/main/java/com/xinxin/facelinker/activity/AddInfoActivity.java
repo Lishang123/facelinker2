@@ -1,3 +1,10 @@
+/*
+ * User: lin
+ * Date:
+ * Describe:添加联系人信息
+ *
+ */
+
 package com.xinxin.facelinker.activity;
 
 import android.app.Activity;

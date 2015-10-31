@@ -3,7 +3,7 @@
 /*
  * User: xinxin
  * Date:
- * Describe:
+ * Describe:检查联系人申请
  *
  */
 

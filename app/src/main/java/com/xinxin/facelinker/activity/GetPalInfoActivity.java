@@ -1,3 +1,10 @@
+/*
+ * User: lin
+ * Date:
+ * Describe:获取好友信息
+ *
+ */
+
 package com.xinxin.facelinker.activity;
 
 import android.app.Activity;

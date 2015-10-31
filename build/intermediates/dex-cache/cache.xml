@@ -2,81 +2,81 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\gengliang\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="D:\android_project\FaceLinker\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-2248bf2c10d376b7092451a85aab232b7470fc4e.jar" />
-    </item>
-    <item
-        jar="D:\android_project\FaceLinker\app\libs\locSDK_3.3.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="590d32bdf5bb37ee372a21696b8f7853b224e31f">
-        <dex dex="D:\android_project\FaceLinker\app\build\intermediates\pre-dexed\debug\locSDK_3.3-5239bae6fac67160b411ed05e9db362ea093201a.jar" />
-    </item>
-    <item
-        jar="D:\android_project\FaceLinker\app\libs\easemobchat_2.2.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="e314f6cc3ec960c883a1ff797b422c3e185020a9">
-        <dex dex="D:\android_project\FaceLinker\app\build\intermediates\pre-dexed\debug\easemobchat_2.2.1-ae812e66553b52f04cf10cf7466312ff353a3df6.jar" />
-    </item>
-    <item
-        jar="D:\android_project\FaceLinker\app\libs\umeng-analytics-v5.2.4.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="0f9eccf79ae6006e4346725b09114182dca0c023">
-        <dex dex="D:\android_project\FaceLinker\app\build\intermediates\pre-dexed\debug\umeng-analytics-v5.2.4-51c85db9e25e2a3a31a1b745a4e9c116d61fabde.jar" />
-    </item>
-    <item
-        jar="D:\android_project\FaceLinker\app\libs\gson-2.3.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="D:\android_project\FaceLinker\app\build\intermediates\pre-dexed\debug\gson-2.3.1-e1f066fbf61483881da74a89a85194c6abcaecdf.jar" />
-    </item>
-    <item
-        jar="D:\android_project\FaceLinker\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="D:\android_project\FaceLinker\app\build\intermediates\pre-dexed\debug\classes-985d1be580dc91842ff6407993c2a887621a8682.jar" />
-    </item>
-    <item
-        jar="D:\android_project\FaceLinker\app\libs\universal-image-loader-1.9.4.jar"
+        jar="E:\AndroidStudioProjects\FaceLinker2\app\libs\universal-image-loader-1.9.4.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="dd9eeb557650c4ad7394df23f0f5cf27a7cfc697">
-        <dex dex="D:\android_project\FaceLinker\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.4-8ebf7b23a6effea724d91f5899c5822779e696da.jar" />
+        <dex dex="E:\AndroidStudioProjects\FaceLinker2\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.4-d57dd58312d8f3ee59ac52a764a6b9eee4e8e2c2.jar" />
     </item>
     <item
-        jar="D:\android_project\FaceLinker\app\libs\baidumapapi_v3_2_0.jar"
+        jar="E:\AndroidStudioProjects\FaceLinker2\app\libs\umeng-analytics-v5.2.4.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="46ca4c3c74e1ddc60b45c490485e5df05babe6a5">
-        <dex dex="D:\android_project\FaceLinker\app\build\intermediates\pre-dexed\debug\baidumapapi_v3_2_0-e3d199854363a1e1d0590b799bf055b8b7ebf997.jar" />
+        sha1="0f9eccf79ae6006e4346725b09114182dca0c023">
+        <dex dex="E:\AndroidStudioProjects\FaceLinker2\app\build\intermediates\pre-dexed\debug\umeng-analytics-v5.2.4-028070c26374afcc1529cf61a4b516f11df9e9f1.jar" />
     </item>
     <item
-        jar="D:\android_project\FaceLinker\app\libs\xUtils-2.6.14.jar"
+        jar="E:\AndroidStudioProjects\FaceLinker2\app\libs\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="E:\AndroidStudioProjects\FaceLinker2\app\build\intermediates\pre-dexed\debug\gson-2.3.1-9faf9bd352c26088f180246d72d76c63f44bead3.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioProjects\FaceLinker2\app\libs\xUtils-2.6.14.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
-        <dex dex="D:\android_project\FaceLinker\app\build\intermediates\pre-dexed\debug\xUtils-2.6.14-1a6aed9efab8155a97cf5d3ec651a233c6228e23.jar" />
+        <dex dex="E:\AndroidStudioProjects\FaceLinker2\app\build\intermediates\pre-dexed\debug\xUtils-2.6.14-8b8d884720836961f2aaf8e4cc5f196d28dff51b.jar" />
     </item>
     <item
-        jar="D:\android_project\FaceLinker\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jar="E:\AndroidStudioProjects\FaceLinker2\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="D:\android_project\FaceLinker\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-872bfc3b749e5458ab1f164bf95c8eccb473215e.jar" />
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="E:\AndroidStudioProjects\FaceLinker2\app\build\intermediates\pre-dexed\debug\classes-999a9ae11f81229bc628f3ddd822b2460fc7a705.jar" />
     </item>
     <item
-        jar="D:\android_project\FaceLinker\app\libs\picasso-2.4.0.jar"
+        jar="E:\AndroidStudioProjects\FaceLinker2\app\libs\picasso-2.4.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
-        <dex dex="D:\android_project\FaceLinker\app\build\intermediates\pre-dexed\debug\picasso-2.4.0-b460552c9bfc625e58a6dbd6b80344c22a6c4e45.jar" />
+        <dex dex="E:\AndroidStudioProjects\FaceLinker2\app\build\intermediates\pre-dexed\debug\picasso-2.4.0-a2252a2033cd271f7e9530b24a6ad9ffed753821.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioProjects\FaceLinker2\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="E:\AndroidStudioProjects\FaceLinker2\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-372080c940ce1c6c61f76355272662e2e182aa96.jar" />
+    </item>
+    <item
+        jar="D:\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="E:\AndroidStudioProjects\FaceLinker2\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-033c6984a357a72562efdef7ab6a4b57873a3b35.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioProjects\FaceLinker2\app\libs\easemobchat_2.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e314f6cc3ec960c883a1ff797b422c3e185020a9">
+        <dex dex="E:\AndroidStudioProjects\FaceLinker2\app\build\intermediates\pre-dexed\debug\easemobchat_2.2.1-cf5922fef26ec186fca5f64675561d25943daad1.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioProjects\FaceLinker2\app\libs\locSDK_3.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="590d32bdf5bb37ee372a21696b8f7853b224e31f">
+        <dex dex="E:\AndroidStudioProjects\FaceLinker2\app\build\intermediates\pre-dexed\debug\locSDK_3.3-2a0423caad339e34012a98a3b7a4c98fde4618f8.jar" />
+    </item>
+    <item
+        jar="E:\AndroidStudioProjects\FaceLinker2\app\libs\baidumapapi_v3_2_0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="46ca4c3c74e1ddc60b45c490485e5df05babe6a5">
+        <dex dex="E:\AndroidStudioProjects\FaceLinker2\app\build\intermediates\pre-dexed\debug\baidumapapi_v3_2_0-d7ec94dfa49575c408e06ebefaa9c92a7497cc81.jar" />
     </item>
 
 </items>

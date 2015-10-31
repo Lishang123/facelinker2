@@ -80,7 +80,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
     private TextView unreadAddressLable;
 
     private Button[] mTabs;
-    private ContactlistFragment contactListFragment;
+    //private ContactlistFragment contactListFragment;
     private ShowPalsFragment showPalsFragment;
     private ChatAllHistoryFragment chatHistoryFragment;
     private ShowPalsMotionFragment showPalsMotionFragment;
@@ -143,7 +143,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
         // 显示所有人消息记录的fragment
         chatHistoryFragment = new ChatAllHistoryFragment();
         showPalsFragment = new ShowPalsFragment();
-        contactListFragment = new ContactlistFragment();
+        //contactListFragment = new ContactlistFragment();
         showPalsMotionFragment = new ShowPalsMotionFragment();
         personalFragment = new PersonalFragment();
         fragments = new Fragment[]{chatHistoryFragment, showPalsFragment, showPalsMotionFragment, personalFragment};
@@ -523,7 +523,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
             localUsers.putAll(toAddUsers);
             // 刷新ui
             if (currentTabIndex == 1)
-                contactListFragment.refresh();
+                //contactListFragment.refresh();
 
         }
 
@@ -548,7 +548,7 @@ public class MainActivity extends BaseActivity implements EMEventListener {
                     }
                     updateUnreadLabel();
                     // 刷新ui
-                    contactListFragment.refresh();
+                    //contactListFragment.refresh();
                     chatHistoryFragment.refresh();
                 }
             });
@@ -713,9 +713,9 @@ public class MainActivity extends BaseActivity implements EMEventListener {
                     // 刷新ui
                     if (currentTabIndex == 0)
                         chatHistoryFragment.refresh();
-                    if (CommonUtils.getTopActivity(MainActivity.this).equals(GroupsActivity.class.getName())) {
-                        GroupsActivity.instance.onResume();
-                    }
+//                    if (CommonUtils.getTopActivity(MainActivity.this).equals(GroupsActivity.class.getName())) {
+//                        GroupsActivity.instance.onResume();
+                   // }
                 }
             });
 
@@ -742,9 +742,9 @@ public class MainActivity extends BaseActivity implements EMEventListener {
                         updateUnreadLabel();
                         if (currentTabIndex == 0)
                             chatHistoryFragment.refresh();
-                        if (CommonUtils.getTopActivity(MainActivity.this).equals(GroupsActivity.class.getName())) {
-                            GroupsActivity.instance.onResume();
-                        }
+//                        if (CommonUtils.getTopActivity(MainActivity.this).equals(GroupsActivity.class.getName())) {
+//                            GroupsActivity.instance.onResume();
+//                        }
                     } catch (Exception e) {
                         EMLog.e(TAG, "refresh exception " + e.getMessage());
                     }
@@ -763,9 +763,9 @@ public class MainActivity extends BaseActivity implements EMEventListener {
                     updateUnreadLabel();
                     if (currentTabIndex == 0)
                         chatHistoryFragment.refresh();
-                    if (CommonUtils.getTopActivity(MainActivity.this).equals(GroupsActivity.class.getName())) {
-                        GroupsActivity.instance.onResume();
-                    }
+//                    if (CommonUtils.getTopActivity(MainActivity.this).equals(GroupsActivity.class.getName())) {
+//                        GroupsActivity.instance.onResume();
+//                    }
                 }
             });
 
@@ -808,9 +808,9 @@ public class MainActivity extends BaseActivity implements EMEventListener {
                     // 刷新ui
                     if (currentTabIndex == 0)
                         chatHistoryFragment.refresh();
-                    if (CommonUtils.getTopActivity(MainActivity.this).equals(GroupsActivity.class.getName())) {
-                        GroupsActivity.instance.onResume();
-                    }
+//                    if (CommonUtils.getTopActivity(MainActivity.this).equals(GroupsActivity.class.getName())) {
+//                        GroupsActivity.instance.onResume();
+                    //}
                 }
             });
         }

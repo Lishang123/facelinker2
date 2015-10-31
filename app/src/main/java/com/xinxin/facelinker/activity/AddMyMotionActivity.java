@@ -1,3 +1,10 @@
+/*
+ * User: lin
+ * Date:
+ * Describe:添加我的动态
+ *
+ */
+
 package com.xinxin.facelinker.activity;
 
 import android.app.Activity;
